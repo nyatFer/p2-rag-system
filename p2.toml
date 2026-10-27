@@ -24,6 +24,15 @@ tokenizer = "codes"
 k1 = 0.9
 b = 0.4
 
+[dense]
+# The embedding model of the dense retriever: "BAAI/bge-small-en-v1.5" or "minishlab/potion-retrieval-32M".
+model = "BAAI/bge-small-en-v1.5"
+
+[rerank]
+# The first-stage system whose top candidates Claude reorders, and how many it sees.
+first = "hybrid"
+candidates = 20
+
 [answer]
 # How many chunks `p2 answer` sends to Claude with each question.
 top = 5

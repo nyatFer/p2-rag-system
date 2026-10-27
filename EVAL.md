@@ -32,19 +32,95 @@ TODO: describe your three systems.
 Scores per system.
 
 <!-- p2:begin shared-practice -->
-_No scored runs here yet: run `uv run p2 run --corpus shared --queries practice --system bm25` (or `--all`), then `uv run p2 score`._
+| System | Recall@10 | MRR@10 | nDCG@10 |
+| --- | ---: | ---: | ---: |
+| bm25 | 0.625 | 0.507 | 0.518 |
+| dense | 0.558 | 0.562 | 0.480 |
+| hybrid | 0.592 | 0.471 | 0.443 |
+| rerank | 0.733 | 0.800 | 0.750 |
+| dense_potion | 0.533 | 0.475 | 0.432 |
+| hybrid_dd | 0.625 | 0.518 | 0.491 |
+
+20 judged queries; nDCG uses binary labels; a random ranking of the 2,484 documents would get recall@10 near 0.004.
 <!-- p2:end shared-practice -->
 
 The same scores per query class.
 
 <!-- p2:begin shared-practice-classes -->
-_No scored runs here yet: run `uv run p2 run --corpus shared --queries practice --system bm25` (or `--all`), then `uv run p2 score`._
+| System | Metric | identifier (n=7) | paraphrase (n=7) | mixed (n=6) |
+| --- | --- | ---: | ---: | ---: |
+| bm25 | Recall@10 | 1.000 | 0.000 | 0.917 |
+| bm25 | MRR@10 | 0.810 | 0.000 | 0.746 |
+| bm25 | nDCG@10 | 0.857 | 0.000 | 0.728 |
+| dense | Recall@10 | 0.214 | 0.595 | 0.917 |
+| dense | MRR@10 | 0.333 | 0.714 | 0.653 |
+| dense | nDCG@10 | 0.211 | 0.593 | 0.661 |
+| hybrid | Recall@10 | 0.500 | 0.405 | 0.917 |
+| hybrid | MRR@10 | 0.514 | 0.152 | 0.792 |
+| hybrid | nDCG@10 | 0.397 | 0.202 | 0.779 |
+| rerank | Recall@10 | 0.643 | 0.595 | 1.000 |
+| rerank | MRR@10 | 0.714 | 0.714 | 1.000 |
+| rerank | nDCG@10 | 0.659 | 0.626 | 1.000 |
+| dense_potion | Recall@10 | 0.500 | 0.286 | 0.861 |
+| dense_potion | MRR@10 | 0.571 | 0.300 | 0.565 |
+| dense_potion | nDCG@10 | 0.470 | 0.254 | 0.595 |
+| hybrid_dd | Recall@10 | 0.357 | 0.643 | 0.917 |
+| hybrid_dd | MRR@10 | 0.476 | 0.398 | 0.708 |
+| hybrid_dd | nDCG@10 | 0.343 | 0.447 | 0.714 |
 <!-- p2:end shared-practice-classes -->
 
 Differences between every pair of systems, each with its paired interval and the minimum detectable difference.
 
 <!-- p2:begin shared-practice-pairs -->
-_No scored runs here yet: run `uv run p2 run --corpus shared --queries practice --system bm25` (or `--all`), then `uv run p2 score`._
+| Comparison | Metric | Mean difference | 95% interval | MDD | Reading |
+| --- | --- | ---: | ---: | ---: | --- |
+| dense minus bm25 | Recall@10 | -0.067 | [-0.350, +0.225] | 0.415 | not distinguishable |
+| dense minus bm25 | MRR@10 | +0.055 | [-0.225, +0.343] | 0.412 | not distinguishable |
+| dense minus bm25 | nDCG@10 | -0.039 | [-0.302, +0.231] | 0.385 | not distinguishable |
+| hybrid minus bm25 | Recall@10 | -0.033 | [-0.250, +0.192] | 0.324 | not distinguishable |
+| hybrid minus bm25 | MRR@10 | -0.037 | [-0.178, +0.083] | 0.192 | not distinguishable |
+| hybrid minus bm25 | nDCG@10 | -0.075 | [-0.238, +0.075] | 0.228 | not distinguishable |
+| hybrid minus dense | Recall@10 | +0.033 | [-0.125, +0.192] | 0.231 | not distinguishable |
+| hybrid minus dense | MRR@10 | -0.092 | [-0.306, +0.109] | 0.301 | not distinguishable |
+| hybrid minus dense | nDCG@10 | -0.036 | [-0.200, +0.113] | 0.227 | not distinguishable |
+| rerank minus bm25 | Recall@10 | +0.108 | [-0.133, +0.350] | 0.351 | not distinguishable |
+| rerank minus bm25 | MRR@10 | +0.293 | [+0.043, +0.533] | 0.353 | rerank higher |
+| rerank minus bm25 | nDCG@10 | +0.231 | [-0.004, +0.454] | 0.334 | not distinguishable |
+| rerank minus dense | Recall@10 | +0.175 | [+0.033, +0.333] | 0.221 | rerank higher |
+| rerank minus dense | MRR@10 | +0.237 | [+0.083, +0.408] | 0.239 | rerank higher |
+| rerank minus dense | nDCG@10 | +0.270 | [+0.129, +0.426] | 0.218 | rerank higher |
+| rerank minus hybrid | Recall@10 | +0.142 | [+0.050, +0.258] | 0.160 | rerank higher |
+| rerank minus hybrid | MRR@10 | +0.329 | [+0.164, +0.504] | 0.247 | rerank higher |
+| rerank minus hybrid | nDCG@10 | +0.306 | [+0.179, +0.437] | 0.189 | rerank higher |
+| dense_potion minus bm25 | Recall@10 | -0.092 | [-0.308, +0.125] | 0.313 | not distinguishable |
+| dense_potion minus bm25 | MRR@10 | -0.033 | [-0.228, +0.177] | 0.296 | not distinguishable |
+| dense_potion minus bm25 | nDCG@10 | -0.086 | [-0.268, +0.106] | 0.270 | not distinguishable |
+| dense_potion minus dense | Recall@10 | -0.025 | [-0.233, +0.167] | 0.286 | not distinguishable |
+| dense_potion minus dense | MRR@10 | -0.088 | [-0.335, +0.153] | 0.349 | not distinguishable |
+| dense_potion minus dense | nDCG@10 | -0.047 | [-0.260, +0.159] | 0.299 | not distinguishable |
+| dense_potion minus hybrid | Recall@10 | -0.058 | [-0.242, +0.100] | 0.250 | not distinguishable |
+| dense_potion minus hybrid | MRR@10 | +0.004 | [-0.161, +0.178] | 0.249 | not distinguishable |
+| dense_potion minus hybrid | nDCG@10 | -0.011 | [-0.155, +0.134] | 0.209 | not distinguishable |
+| dense_potion minus rerank | Recall@10 | -0.200 | [-0.367, -0.058] | 0.226 | rerank higher |
+| dense_potion minus rerank | MRR@10 | -0.325 | [-0.525, -0.145] | 0.276 | rerank higher |
+| dense_potion minus rerank | nDCG@10 | -0.317 | [-0.477, -0.169] | 0.225 | rerank higher |
+| hybrid_dd minus bm25 | Recall@10 | +0.000 | [-0.275, +0.275] | 0.406 | not distinguishable |
+| hybrid_dd minus bm25 | MRR@10 | +0.011 | [-0.186, +0.215] | 0.293 | not distinguishable |
+| hybrid_dd minus bm25 | nDCG@10 | -0.028 | [-0.240, +0.190] | 0.314 | not distinguishable |
+| hybrid_dd minus dense | Recall@10 | +0.067 | [+0.000, +0.142] | 0.104 | not distinguishable |
+| hybrid_dd minus dense | MRR@10 | -0.044 | [-0.220, +0.129] | 0.249 | not distinguishable |
+| hybrid_dd minus dense | nDCG@10 | +0.011 | [-0.103, +0.123] | 0.162 | not distinguishable |
+| hybrid_dd minus hybrid | Recall@10 | +0.033 | [-0.117, +0.183] | 0.224 | not distinguishable |
+| hybrid_dd minus hybrid | MRR@10 | +0.048 | [-0.073, +0.193] | 0.197 | not distinguishable |
+| hybrid_dd minus hybrid | nDCG@10 | +0.047 | [-0.059, +0.174] | 0.170 | not distinguishable |
+| hybrid_dd minus rerank | Recall@10 | -0.108 | [-0.250, +0.000] | 0.183 | not distinguishable |
+| hybrid_dd minus rerank | MRR@10 | -0.282 | [-0.445, -0.133] | 0.230 | rerank higher |
+| hybrid_dd minus rerank | nDCG@10 | -0.259 | [-0.385, -0.147] | 0.178 | rerank higher |
+| hybrid_dd minus dense_potion | Recall@10 | +0.092 | [-0.067, +0.275] | 0.245 | not distinguishable |
+| hybrid_dd minus dense_potion | MRR@10 | +0.044 | [-0.062, +0.138] | 0.144 | not distinguishable |
+| hybrid_dd minus dense_potion | nDCG@10 | +0.058 | [-0.057, +0.166] | 0.161 | not distinguishable |
+
+The interval is a paired bootstrap (10,000 resamples of the queries); MDD is the smallest difference this many queries detect 80% of the time.
 <!-- p2:end shared-practice-pairs -->
 
 The 40 test queries have no answer key in this repo.
@@ -214,7 +290,39 @@ _No judged answers yet (stretch option 2): `uv run p2 judge answers/shared/LABEL
 The Claude calls, tokens and seconds in every trace you committed, and what a cheaper system or answers file saves against what it loses.
 
 <!-- p2:begin stretch-cost -->
-_No Claude traces yet: a run of a system that calls Claude, `p2 answer` and `p2 judge` write them in traces/, and then `uv run p2 score` fills this table._
+Every trace in traces/ that records a Claude call:
+
+| Trace | System | Spans | Claude calls | Saved | Input tokens | Output tokens | Seconds | Input per span | Output per span | Seconds per span |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| traces/shared-practice-rerank.jsonl | rerank | 20 | 20 | 3 | 160,002 | 2,040 | 113.3 | 8,000 | 102 | 5.7 |
+| traces/shared-test-rerank.jsonl | rerank | 40 | 40 | 0 | 320,119 | 4,497 | 189.5 | 8,003 | 112 | 4.7 |
+
+A span is one query of a run, one question of an answers file, or one claim of a judged file. A saved reply costs nothing now, so it counts the tokens and the seconds of the call that made it.
+
+Every pair of systems on the same queries where at least one calls Claude, the one with fewer Claude input tokens per query first:
+
+| Cheaper minus dearer | Queries | MRR@10 difference | 95% interval | Input tokens saved per query | Seconds saved per query | Reading |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| shared practice: bm25 minus rerank | 20 | -0.293 | [-0.533, -0.043] | 8,000 | 5.7 | rerank higher |
+| shared practice: dense minus rerank | 20 | -0.237 | [-0.408, -0.083] | 8,000 | 5.7 | rerank higher |
+| shared practice: hybrid minus rerank | 20 | -0.329 | [-0.504, -0.164] | 8,000 | 5.7 | rerank higher |
+| shared practice: dense_potion minus rerank | 20 | -0.325 | [-0.525, -0.145] | 8,000 | 5.7 | rerank higher |
+| shared practice: hybrid_dd minus rerank | 20 | -0.282 | [-0.445, -0.133] | 8,000 | 5.7 | rerank higher |
+
+The difference is the cheaper system's score minus the dearer one's, with its paired interval; the savings count Claude calls only, so a system that makes none saves all of the other's.
+
+Systems that do not call Claude, from traces/retrieval/ on the machine that last ran `p2 score` (git ignores that folder, so `p2 check` does not compare this part):
+
+| Trace | System | Queries | Seconds | Milliseconds per query |
+| --- | --- | ---: | ---: | ---: |
+| traces/retrieval/shared-practice-bm25.jsonl | bm25 | 20 | 0.04 | 1.9 |
+| traces/retrieval/shared-practice-dense.jsonl | dense | 20 | 0.16 | 8.0 |
+| traces/retrieval/shared-practice-dense_potion.jsonl | dense_potion | 20 | 0.08 | 4.0 |
+| traces/retrieval/shared-practice-hybrid.jsonl | hybrid | 20 | 0.21 | 10.4 |
+| traces/retrieval/shared-practice-hybrid_dd.jsonl | hybrid_dd | 20 | 0.25 | 12.5 |
+| traces/retrieval/shared-test-bm25.jsonl | bm25 | 40 | 0.07 | 1.8 |
+| traces/retrieval/shared-test-dense.jsonl | dense | 40 | 0.28 | 7.1 |
+| traces/retrieval/shared-test-hybrid.jsonl | hybrid | 40 | 0.41 | 10.3 |
 <!-- p2:end stretch-cost -->
 
 ### The grep agent (option 5)
