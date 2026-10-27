@@ -179,7 +179,30 @@ Then read three in-corpus answers that `uv run p2 verify` passed.
 For each one, open the cited chunk and say whether the quote really supports the claim next to it.
 The check proves a quote is a real piece of the chunk and cannot prove that it supports the claim, so this reading is the part only you can do.
 
-TODO: write your answer choices and your three-answer audit.
+The rerank system answered because it was the best retriever on the practice queries even though it also uses more Claude calls and usage.
+Nothing was changed in prompts/answer.txt so the verified share didn't move and there is nothing to compare.
+
+a02:
+Claim 1 is supported because the quote matches the claim.
+
+Claim 2 is supported, but the "only" is inferred as the quote doesn't contain "only" but the claim does.
+
+Additions: Nothing new has been added that wasn't in the claims but it does say "the increase" without saying what the increase is.
+
+a04:
+Claim 1 is supported as the quote says "At least once every six months, mine evacuation drills shall be held." which is exactly what the claim says.
+
+Claim 2 is supported as the quote is also exactly the same as the claim "Be held for each shift at some time other than a shift change and involve all persons underground."
+
+Additions: The answer adds "underground" unlike the claims. It also made "drills" into singular in the answer "Each drill… for each shift" even though the quote say "drills".
+
+a07:
+Claim 1 is supported for the height. The quote says "at least mid-axle height of the largest self-propelled mobile equipment which usually travels the roadway." which matches. For the label "(surface mines, Part 56)" the "Part 56" half is supported by the chunk's title, 56.9300 but the "surface mines" half is not supported because those words don't appear anywhere in the chunk.
+
+Claim 2 is supported as the quote is the same sentence from 57.9300 but the sentence itself doesn’t say "Part 57."
+
+Additions: Nothing new is added that wasn't in the claims.
+
 
 ---
 
