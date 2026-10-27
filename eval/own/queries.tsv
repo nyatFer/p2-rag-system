@@ -1,0 +1,4 @@
+# Your gold set's queries, one per line: qid<TAB>class<TAB>text<TAB>origin, separated by tabs.
+# origin is hand when you wrote the query yourself and claude when a model drafted it; at least 10 must be hand.
+# class is a word you choose, for example identifier, paraphrase or mixed as in the shared sets; scores are reported per class.
+# Lines that start with # are comments, so delete these lines or keep them, as you like.

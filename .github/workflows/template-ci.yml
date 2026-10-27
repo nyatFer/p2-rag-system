@@ -1,0 +1,76 @@
+# template-ci: tests the template itself on every operating system the class uses.
+# It runs only in the course's template repository; in a copy made with "Use this template" the
+# job is skipped, and p2-check.yml is the workflow that checks your work.
+
+name: template-ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: template-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    if: github.event.repository.is_template || github.repository == 'Mines-Coding-with-AI-Agents/P2-rag-system'
+    name: test (${{ matrix.os }}, Python ${{ matrix.python || '3.12' }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+          - os: windows-latest
+          - os: macos-latest  # Apple Silicon
+          - os: macos-15-intel  # Intel; macos-15-intel and macos-26-intel are GitHub's x64 Mac runners (checked 2026-10-04)
+          # .python-version pins 3.12; the two ends of requires-python run on Linux.
+          - os: ubuntu-latest
+            python: "3.11"
+          - os: ubuntu-latest
+            python: "3.13"
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Check that uv.lock matches pyproject.toml
+        run: uv lock --check
+
+      - name: Install the locked packages, the ingest converters included
+        run: uv sync --frozen --all-groups
+
+      - name: Run the tests
+        run: uv run --frozen --all-groups pytest
+
+      - name: Run p2 check on the fresh template
+        run: uv run --frozen p2 check
+
+  lint:
+    if: github.event.repository.is_template || github.repository == 'Mines-Coding-with-AI-Agents/P2-rag-system'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+
+      - name: Lint p2/ and tests/ (the rules are in pyproject.toml)
+        run: uvx ruff@0.16.10 check
+
+      - name: No em dash in the course's own text (the shared corpus keeps its source text as it is)
+        shell: bash
+        run: |
+          em=$(printf '\342\200\224')
+          if LC_ALL=C grep -rlI -F "$em" --exclude-dir=.git --exclude-dir=.venv --exclude-dir=docs --exclude=manifest.tsv --exclude=uv.lock .; then
+            echo "The files above contain an em dash; write a plain hyphen or rephrase."
+            exit 1
+          fi

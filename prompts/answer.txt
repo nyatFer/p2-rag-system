@@ -1,0 +1,7 @@
+Answer only from the chunks provided, and cite every claim.
+Each claim must name the id of the chunk it comes from and quote that chunk word for word, copied exactly, with nothing changed or left out.
+If the chunks do not say what the question asks, set not_found to true, leave claims empty, and do not answer from what you already know.
+
+# Lines that start with # are notes for you; p2 answer removes them before it sends this file to Claude as the system prompt.
+# This is the 13 lab's prompt, and it is yours to change: try a version, run p2 answer under a new --label, and compare the verified and declined shares.
+# Say in DECISIONS.md what you changed and why, with the numbers that moved (or did not).

@@ -1,0 +1,14 @@
+# Cited-answer questions for the shared corpus (30 CFR Chapter I): qid<TAB>kind<TAB>question<TAB>gold docids.
+# Kind "in" questions are answered in the gold sections (comma-separated); "out" questions (gold -) are not answered anywhere in the corpus, so a good system declines them.
+a01	in	Within how many minutes must a mine operator call MSHA after an accident that kills a miner?	cfr30-50.10
+a02	in	What minimum incombustible content must the combined dust in an underground coal mine keep where no methane is present?	cfr30-75.403
+a03	in	How long must the self-rescue device given to each underground coal miner be able to protect that person?	cfr30-75.1714,cfr30-75.1714-1
+a04	in	How often must an underground metal or nonmetal mine hold evacuation drills?	cfr30-57.4361
+a05	in	How many hours of training must a new underground miner receive before being assigned to work duties?	cfr30-48.5
+a06	in	What is the permissible exposure level for noise at a mine, as an 8-hour average?	cfr30-62.101
+a07	in	How high must berms or guardrails be on the banks of roadways at metal and nonmetal mines?	cfr30-56.9300,cfr30-57.9300
+a08	in	For how many hours must the breathable air in an approved refuge alternative sustain each person?	cfr30-7.506
+a09	out	What must a written bloodborne pathogens exposure control plan contain under OSHA?	-
+a10	out	At what depth does OSHA require a construction trench to have a protective system such as shoring or a trench box?	-
+a11	out	What FAA certification does a pilot need to fly a drone over a mine site?	-
+a12	out	When does a mine need an EPA stormwater discharge permit for runoff from its site?	-

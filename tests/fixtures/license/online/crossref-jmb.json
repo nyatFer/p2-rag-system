@@ -1,0 +1,30 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "DOI": "10.1016/j.jmb.2005.01.025",
+  "publisher": "Elsevier BV",
+  "title": [
+   "Molecular Structure of d-Hydantoinase from Bacillus sp. AR9: Evidence for Mercury Inhibition"
+  ],
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2005,
+       3,
+       1
+      ]
+     ],
+     "date-time": "2005-03-01T00:00:00Z",
+     "timestamp": 1109635200000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+   }
+  ]
+ }
+}

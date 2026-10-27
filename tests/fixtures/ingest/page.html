@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Centrifugal pump basics - Example Engineering Notes</title>
+  <meta name="description" content="A short note on centrifugal pumps.">
+</head>
+<body>
+  <div class="cookie-banner" id="cookies">We use cookies to improve your experience. Accept all cookies or manage settings.</div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pumps">Pumps</a></li>
+        <li><a href="/login">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Centrifugal pump basics</h1>
+      <p>A centrifugal pump moves fluid by turning the <strong>kinetic energy</strong> of a spinning impeller into pressure.
+      The fluid enters at the eye of the impeller and is thrown outward by the <em>vanes</em>, so the casing sees a higher pressure than the inlet.<sup>[1]</sup></p>
+      <h2>Reading a pump curve</h2>
+      <p>The <a href="https://example.org/curves">pump curve</a> plots head against flow rate for a fixed impeller diameter and speed.
+      As the flow rate rises the head falls, and the point where the system curve crosses the pump curve is the operating point.
+      Trimming the impeller shifts the whole curve downward, which is why a smaller diameter delivers less flow at the same head.</p>
+      <p>Efficiency peaks near the best efficiency point.
+      Running far to the left of that point causes recirculation inside the casing, and running far to the right risks cavitation at the inlet.
+      Operators therefore try to keep the operating point within about ten percent of the best efficiency flow.</p>
+      <h2>Net positive suction head</h2>
+      <p>Cavitation begins when the pressure at the impeller eye drops below the vapor pressure of the liquid.
+      The margin between the available suction pressure and that limit is called the net positive suction head, and the pump maker publishes the required value for every model.
+      A designer must make sure that the available value exceeds the required one by a comfortable margin.</p>
+      <p>Two useful rules follow from this.
+      First, keep the suction line short and straight, because every fitting adds loss.
+      Second, never throttle the suction valve to control flow, because that lowers the available head exactly where it is needed.</p>
+      <h2>References</h2>
+      <ol>
+        <li>A. Author, Pump Handbook, 3rd ed. (2001).</li>
+        <li>B. Writer, "Cavitation in practice," Journal of Fluids 12, 45-60 (1998).</li>
+        <li>C. Person, et al., Pump Selection, 2010. doi:10.1000/example</li>
+        <li>D. Someone, Hydraulic Institute Standards (2004).</li>
+      </ol>
+    </article>
+  </main>
+  <footer>
+    <p>Copyright notice, privacy policy, terms of use, and a long list of footer links that should not be indexed.</p>
+    <a href="/privacy">Privacy</a> <a href="/terms">Terms</a>
+  </footer>
+</body>
+</html>

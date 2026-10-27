@@ -1,0 +1,8 @@
+Pump notes in plain text
+
+The ﬁnal report covers the ﬂow of the inter­
+national standard, and a word split at a line break like exam-
+ple stays readable.
+A well-known fact keeps its hyphen.
+
+Second paragraph with a non breaking space.

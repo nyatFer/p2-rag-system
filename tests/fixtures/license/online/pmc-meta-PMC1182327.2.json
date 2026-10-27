@@ -1,0 +1,17 @@
+{
+ "pmcid": "PMC1182327",
+ "version": 2,
+ "pmid": 16060722,
+ "doi": "10.1371/journal.pmed.0020124",
+ "mid": null,
+ "title": "Why Most Published Research Findings Are False",
+ "citation": "PLoS Med. 2005 Aug 30;2(8):e124. doi: 10.1371/journal.pmed.0020124",
+ "is_pmc_openaccess": true,
+ "is_manuscript": false,
+ "is_historical_ocr": false,
+ "is_retracted": false,
+ "license_code": "CC BY",
+ "text_url": "s3://pmc-oa-opendata/PMC1182327.2/PMC1182327.2.txt?md5=1d1ef5abe6177918827f62d5ad8a28a7",
+ "xml_url": "s3://pmc-oa-opendata/PMC1182327.2/PMC1182327.2.xml?md5=cb2ad77e7d374764827d8e97038745b5",
+ "pdf_url": "s3://pmc-oa-opendata/PMC1182327.2/PMC1182327.2.pdf?md5=f4de91152c7ab9fdc2a128f962faebff"
+}

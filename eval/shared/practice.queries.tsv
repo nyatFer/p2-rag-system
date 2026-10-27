@@ -1,0 +1,22 @@
+# Practice queries for the shared corpus (30 CFR Chapter I): qid<TAB>class<TAB>text.
+# Their judgments are in practice.qrels.txt.
+p01	identifier	ISO 7708
+p02	identifier	49.12
+p03	identifier	What does 75.1714 require?
+p04	identifier	ASTM F3387
+p05	identifier	ASTM E119
+p06	identifier	What is MSHA Form 5000-3 for?
+p07	identifier	ASTM F496
+p08	paraphrase	Must big work vehicles make a sound when they roll backwards so people behind them know?
+p09	paraphrase	Should crews stop setting off charges when a thunderstorm rolls in?
+p10	paraphrase	Is there a yearly cap on how much radioactive gas underground workers can take in?
+p11	paraphrase	A worker's lungs are starting to scar from years of coal dust; can they ask to be moved somewhere cleaner?
+p12	paraphrase	Can an outside company that does jobs at mines get its own government ID number?
+p13	paraphrase	How can a worker get the government to send someone to check a danger at their site?
+p14	paraphrase	Must someone working near a big drop be tied off so they can't fall?
+p15	mixed	Form 7000-1: our injured worker is still off work, how many days do we have to send it in?
+p16	mixed	Under 56.14107, does a spinning shaft seven feet up still need a guard?
+p17	mixed	Part 48: how many hours of refresher classes does an underground miner need each year?
+p18	mixed	MSHA Form 5000-23: when does a worker get a copy of their training record?
+p19	mixed	HazCom: what has to be printed on a container label for a dangerous chemical?
+p20	mixed	Part 50: does a cut that only needed a bandage count as a reportable injury?

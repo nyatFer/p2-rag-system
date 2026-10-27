@@ -1,0 +1,72 @@
+docid	title	source	license	notes
+vocab-us-gov-public-domain	Pump note	https://example.org/x	us-gov-public-domain	
+vocab-public-domain	Pump note	https://example.org/x	public-domain	
+vocab-cc0-1.0	Pump note	https://example.org/x	cc0-1.0	
+vocab-own-work	Pump note	https://example.org/x	own-work	
+vocab-mit	Pump note	https://example.org/x	mit	
+vocab-apache-2.0	Pump note	https://example.org/x	apache-2.0	
+vocab-bsd-2-clause	Pump note	https://example.org/x	bsd-2-clause	
+vocab-bsd-3-clause	Pump note	https://example.org/x	bsd-3-clause	
+vocab-cc-by-2.0	Pump note	https://example.org/x	cc-by-2.0	
+vocab-cc-by-2.1	Pump note	https://example.org/x	cc-by-2.1	
+vocab-cc-by-2.5	Pump note	https://example.org/x	cc-by-2.5	
+vocab-cc-by-3.0	Pump note	https://example.org/x	cc-by-3.0	
+vocab-cc-by-4.0	Pump note	https://example.org/x	cc-by-4.0	
+vocab-cc-by-sa-2.0	Pump note	https://example.org/x	cc-by-sa-2.0	
+vocab-cc-by-sa-2.1	Pump note	https://example.org/x	cc-by-sa-2.1	
+vocab-cc-by-sa-2.5	Pump note	https://example.org/x	cc-by-sa-2.5	
+vocab-cc-by-sa-3.0	Pump note	https://example.org/x	cc-by-sa-3.0	
+vocab-cc-by-sa-4.0	Pump note	https://example.org/x	cc-by-sa-4.0	
+fail-cc-by-nc-4.0	Pump note	https://example.org/x	cc-by-nc-4.0	
+fail-cc-by-nd-4.0	Pump note	https://example.org/x	cc-by-nd-4.0	
+fail-cc-by-nc-sa-4.0	Pump note	https://example.org/x	cc-by-nc-sa-4.0	
+fail-cc-by-nc-nd-4.0	Pump note	https://example.org/x	cc-by-nc-nd-4.0	
+fail-uppercase-nd	Pump note	https://example.org/x	CC-BY-ND-4.0	
+fail-unknown	Pump note	https://example.org/x	unknown	
+fail-all-rights-reserved	Pump note	https://example.org/x	all-rights-reserved	
+fail-empty	Pump note	https://example.org/x		
+fail-unlisted-gpl	Pump note	https://example.org/x	gpl-3.0	
+fail-unlisted-cc-by-1.0	Pump note	https://example.org/x	cc-by-1.0	
+fail-spelled-with-spaces	Pump note	https://example.org/x	CC BY 4.0	
+scan-copyright-symbol	Pump note	https://example.org/x	cc-by-4.0	
+scan-copyright-c-year	Pump note	https://example.org/x	cc-by-4.0	
+scan-copyright-word-year	Pump note	https://example.org/x	cc-by-4.0	
+scan-copyright-word-1999	Pump note	https://example.org/x	cc-by-4.0	
+scan-all-rights-reserved	Pump note	https://example.org/x	cc-by-4.0	
+scan-all-rights-reserved-wrapped	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-elsevier	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-springer	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-wiley	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-ieee	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-acs	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-taylor	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-taylor-and	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-sage	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-cup	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-oup	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-astm	Pump note	https://example.org/x	cc-by-4.0	
+scan-publisher-iso	Pump note	https://example.org/x	cc-by-4.0	
+scan-cc-by-nc	Pump note	https://example.org/x	cc-by-4.0	
+scan-cc-by-nd	Pump note	https://example.org/x	cc-by-4.0	
+scan-cc-by-nc-sa-url	Pump note	https://example.org/x	cc-by-4.0	
+scan-cc-attribution-noncommercial	Pump note	https://example.org/x	cc-by-4.0	
+scan-permission	Pump note	https://example.org/x	cc-by-4.0	
+scan-usgs-sentence	Pump note	https://example.org/x	cc-by-4.0	
+scan-usgs-sentence-gov	Pump note	https://example.org/x	us-gov-public-domain	
+scan-many-hits	Pump note	https://example.org/x	cc-by-4.0	
+clean-lookalikes	Pump note	https://example.org/x	cc-by-4.0	
+clean-iso-inside-word	Pump note	https://example.org/x	cc-by-4.0	
+review-resolved	Pump note	https://example.org/x	cc-by-4.0	reviewed: the page footer says "Creative Commons Attribution 4.0 International" and the (c) line names the same author
+review-with-other-notes	Pump note	https://example.org/x	cc-by-4.0	file: raw/pump.pdf; reviewed: author line only, the page says "licensed under CC BY 4.0"
+review-empty-reason	Pump note	https://example.org/x	cc-by-4.0	reviewed:
+review-only-punctuation	Pump note	https://example.org/x	cc-by-4.0	reviewed: -
+review-word-without-colon	Pump note	https://example.org/x	cc-by-4.0	I reviewed this one
+review-does-not-rescue-license	Pump note	https://example.org/x	unknown	reviewed: "all rights reserved" appears on the page
+review-on-clean-doc	Pump note	https://example.org/x	cc-by-4.0	reviewed: nothing to review but harmless
+missing-file	Missing file	https://example.org/m	cc-by-4.0	
+vocab-mit	Duplicate row	https://example.org/d	mit	
+Bad_ID	Bad id	https://example.org/b	mit	
+too-many-columns	Title	src	mit	notes	extra
+scan-contractor-notice	Pump note	https://example.org/x	cc-by-4.0	
+scan-credit-line	Pump note	https://example.org/x	cc-by-4.0	
+clean-publisher-mentions	Pump note	https://example.org/x	cc-by-4.0	

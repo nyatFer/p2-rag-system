@@ -1,0 +1,90 @@
+# p2-check: the check GitHub runs on every push and pull request of your P2 repo.
+# It runs `uv run p2 check`, the same command you run on your machine: is everything you committed
+# well-formed and reproducible? Work you have not done yet is a TODO line and keeps the run green;
+# only a FAIL line turns it red, and each FAIL line says what to do next.
+# It never calls Claude: runs of a system that calls Claude are checked against their traces, not run again.
+# This file belongs to the course, so please leave it as it is.
+
+name: p2-check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # A newer push replaces a check that is still running on the same branch; the caches below are
+  # saved even then, so the next run starts from where this one got to.
+  group: p2-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    # The first run that checks dense runs on a corpus encodes that corpus once: about 3 to 7 minutes for
+    # the shared corpus, and up to about twice that for your own near its 1,000,000-token limit. Later
+    # runs reuse the caches below and take under a minute.
+    timeout-minutes: 45
+    env:
+      # The embedding models live inside the workspace, so the cache steps can see whether they exist.
+      HF_HOME: ${{ github.workspace }}/.cache/huggingface
+    steps:
+      # Full history, so the 598E pre-registration check can see the order of your commits.
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+
+      # The embedding models (about 200 MB) change only with the packages or your retrievers.
+      - name: Restore the embedding models
+        id: models
+        uses: actions/cache/restore@v6
+        with:
+          path: .cache/huggingface
+          key: p2-models-${{ runner.os }}-${{ hashFiles('uv.lock', 'p2.toml', 'p2/retrievers/*.py') }}
+          restore-keys: |
+            p2-models-${{ runner.os }}-
+
+      # The chunk vectors are stored per chunk text, so the newest cache from any earlier run still
+      # saves the work for every chunk that has not changed. Every run saves its own copy (below).
+      - name: Restore the chunk vectors
+        uses: actions/cache/restore@v6
+        with:
+          path: .cache/vectors
+          key: p2-vectors-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            p2-vectors-${{ runner.os }}-
+
+      - name: Install the locked packages
+        run: uv sync --frozen
+
+      - name: Run p2 check
+        run: uv run --frozen p2 check
+
+      # The two save steps run even when the check fails, times out or is cancelled, so a long first
+      # encode is never thrown away (p2 saves the vectors every minute while it encodes).
+      - name: See what there is to save
+        id: found
+        if: always()
+        shell: bash
+        run: |
+          if [ -d .cache/huggingface/hub ]; then echo "models=yes" >> "$GITHUB_OUTPUT"; fi
+          if compgen -G ".cache/vectors/*.npz" > /dev/null; then echo "vectors=yes" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Save the embedding models
+        if: always() && steps.found.outputs.models == 'yes' && steps.models.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v6
+        with:
+          path: .cache/huggingface
+          key: p2-models-${{ runner.os }}-${{ hashFiles('uv.lock', 'p2.toml', 'p2/retrievers/*.py') }}
+
+      - name: Save the chunk vectors
+        if: always() && steps.found.outputs.vectors == 'yes'
+        uses: actions/cache/save@v6
+        with:
+          path: .cache/vectors
+          key: p2-vectors-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}

@@ -1,0 +1,42 @@
+# Test queries for the shared corpus (30 CFR Chapter I): qid<TAB>class<TAB>text.
+# Their judgments are private; the course scores your committed test runs against them.
+t01	identifier	1-800-746-1553
+t02	identifier	§ 75.1505
+t03	identifier	30 CFR 75.403
+t04	identifier	ASTM F432
+t05	identifier	What is MSHA Form 7000-2?
+t06	identifier	ANSI N13.8
+t07	identifier	section 62.130
+t08	identifier	§ 75.1200
+t09	identifier	30 CFR 90.3
+t10	identifier	SAE J 231
+t11	identifier	TWA8
+t12	identifier	Form 4000-9
+t13	identifier	ANSI Z88.2
+t14	paraphrase	Do mine owners have to give thirsty crews something to drink on the job?
+t15	paraphrase	Can a worker who shows up drunk or stoned stay on shift?
+t16	paraphrase	Does the company need to keep supplies on hand for patching up someone who gets hurt?
+t17	paraphrase	Can a boss send someone off by themselves to a dangerous spot where no one would notice if they got in trouble?
+t18	paraphrase	Is it okay to walk underneath something a crane is lifting?
+t19	paraphrase	Does the company have to pay for ear protection for workers on noisy jobs?
+t20	paraphrase	What is the most tailpipe soot a worker below ground at a gold or salt operation can be exposed to?
+t21	paraphrase	Does a trucker bringing supplies to a gravel pit need a safety talk before driving in?
+t22	paraphrase	After someone is killed on site, can the company tidy up the area before the inquiry wraps up?
+t23	paraphrase	How long do the files on workplace injuries have to be kept?
+t24	paraphrase	Is it okay to aim the air nozzle at somebody as a joke?
+t25	paraphrase	Is head gear required where rocks or tools might drop on people?
+t26	paraphrase	Can a coal miner take cigarettes and something to light them below ground?
+t27	paraphrase	Before fixing a machine's wiring, how do you make sure nobody switches it back on?
+t28	mixed	SAE J386 seat belts in haul trucks: do worn ones have to be swapped out?
+t29	mixed	Part 62: our loader operator's noise dose hit 85 dBA, what program must they be put in?
+t30	mixed	Our SCSR units are kept far from the crew; how close do they have to be?
+t31	mixed	ASTM E162: what fire rating does the foam sealer on our airflow walls need?
+t32	mixed	57.4361: does everyone have to actually leave during the drill, or is a tabletop talk enough?
+t33	mixed	SAE J1194: does a farm tractor used at a quarry need a rollover cage?
+t34	mixed	Part 45: what details does a contractor have to hand the mine operator about itself and its job?
+t35	mixed	Under 75.360, how many hours before a shift must the gas check be done?
+t36	mixed	AMS: the carbon monoxide sensor along the belt is alarming, what has to happen?
+t37	mixed	Part 100: does a small company get a lower penalty?
+t38	mixed	S&S: how does MSHA decide a mine has a pattern of serious violations?
+t39	mixed	MSDS: how long must a mine keep the safety sheet for a chemical?
+t40	mixed	Part 47: does a mine need a written plan for telling workers about chemical hazards?

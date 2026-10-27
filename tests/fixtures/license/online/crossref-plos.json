@@ -1,0 +1,30 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "DOI": "10.1371/journal.pmed.0020124",
+  "publisher": "Public Library of Science (PLoS)",
+  "title": [
+   "Why Most Published Research Findings Are False"
+  ],
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2005,
+       8,
+       30
+      ]
+     ],
+     "date-time": "2005-08-30T00:00:00Z",
+     "timestamp": 1125360000000
+    },
+    "content-version": "unspecified",
+    "delay-in-days": 0,
+    "URL": "http://creativecommons.org/licenses/by/4.0/"
+   }
+  ]
+ }
+}

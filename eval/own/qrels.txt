@@ -1,0 +1,4 @@
+# Your relevance judgments, one per line: qid 0 docid rel, separated by spaces.
+# rel is 1 for a relevant document, unless EVAL.md declares graded labels; every query needs at least one relevant document.
+# 598E: commit your filled-in PREREG.md before the first judgment line goes into this file.
+# Lines that start with # are comments.

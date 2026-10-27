@@ -1,0 +1,47 @@
+[project]
+name = "p2"
+version = "0.1.0"
+description = "P2 for Coding with AI Agents: a search-and-answer system over two corpora, and the measurements that say which retriever wins."
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "numpy>=1.26,<3",
+    "model2vec>=0.9,<0.10",
+    "fastembed>=0.8.1,<0.9",
+    "huggingface_hub>=1.0,<2",
+]
+
+[project.scripts]
+p2 = "p2.cli:main"
+
+[dependency-groups]
+# `uv sync --group ingest` adds the PDF and HTML converters for `p2 ingest`; CI never installs them.
+ingest = ["pypdf>=6.19,<7", "trafilatura>=2.3,<3"]
+dev = ["pytest>=8,<10"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["p2"]
+
+[tool.uv]
+# The lock must install on every machine in the class, including Intel Macs.
+required-environments = [
+    "sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "sys_platform == 'linux' and platform_machine == 'x86_64'",
+    "sys_platform == 'win32' and platform_machine == 'AMD64'",
+]
+# onnxruntime 1.24 and later ship macOS wheels for Apple Silicon on macOS 14 or newer only;
+# 1.23 has wheels for both Mac architectures from macOS 13, so every Mac in the class can install it.
+constraint-dependencies = ["onnxruntime<1.24; sys_platform == 'darwin'"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff.lint]
+# The course's lint rules for p2/ and tests/ (template-ci.yml runs them): errors, warnings, pyflakes and bugbear.
+select = ["E", "F", "W", "B"]
+ignore = ["E501", "B905"]

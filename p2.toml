@@ -1,0 +1,33 @@
+# Your P2 settings. Every p2 command reads this file.
+# p2 check regenerates your committed runs with these values, so after you change one,
+# run `uv run p2 run --all` and `uv run p2 score` again and commit what they write.
+# You can add tables of your own (for example [dense] model = "...") and read them in your
+# retrievers with cfg.table("dense").
+
+# "498E" or "598E"; 598E switches on the checks for the rider.
+section = "498E"
+
+[run]
+# How many documents each query keeps in a run file.
+k = 10
+
+[chunking]
+# Words per chunk, and words shared by neighboring chunks.
+# 0 words keeps every document whole as one chunk.
+words = 300
+overlap = 50
+
+[bm25]
+# "codes" keeps codes such as 75.403 or syn-4127 whole and also indexes their parts.
+# "lab" is the plain [a-z0-9]+ tokenizer from the 12 lab.
+tokenizer = "codes"
+k1 = 0.9
+b = 0.4
+
+[answer]
+# How many chunks `p2 answer` sends to Claude with each question.
+top = 5
+
+[claude]
+# The model for every claude -p call (the reranker and the answers).
+model = "sonnet"

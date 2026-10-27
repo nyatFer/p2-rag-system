@@ -1,0 +1,23 @@
+# Python and uv
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Model downloads, cached vectors and cached Claude replies (rebuilt on demand)
+.cache/
+
+# Traces of answers and of systems that call Claude (in traces/) record what the calls cost and what
+# Claude returned, so they are committed; p2 check reads them. The retrieval traces of the other
+# systems (in traces/retrieval/) change on every run, so git ignores them.
+traces/retrieval/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

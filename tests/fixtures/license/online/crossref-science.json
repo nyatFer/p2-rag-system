@@ -1,0 +1,12 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "DOI": "10.1126/science.1127647",
+  "publisher": "American Association for the Advancement of Science (AAAS)",
+  "title": [
+   "Reducing the Dimensionality of Data with Neural Networks"
+  ]
+ }
+}

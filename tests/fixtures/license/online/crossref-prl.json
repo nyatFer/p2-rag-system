@@ -1,0 +1,30 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "DOI": "10.1103/physrevlett.116.061102",
+  "publisher": "American Physical Society (APS)",
+  "title": [
+   "Observation of Gravitational Waves from a Binary Black Hole Merger"
+  ],
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2016,
+       2,
+       11
+      ]
+     ],
+     "date-time": "2016-02-11T00:00:00Z",
+     "timestamp": 1455148800000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "http://creativecommons.org/licenses/by/3.0/"
+   }
+  ]
+ }
+}
