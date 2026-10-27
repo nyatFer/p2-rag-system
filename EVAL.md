@@ -25,7 +25,22 @@ The minimum detectable difference is the smallest gap this many queries could re
 
 For each of `dense`, `hybrid` and `rerank`, one or two sentences: the embedding model, how documents were chunked, what was fused and how, how many candidates the reranker saw, and anything you changed from the 12 and 13 lab code.
 
-TODO: describe your three systems.
+For dense:
+The embedding model is BAAI/bge-small-en-v1.5.
+The documents are chunked by 300 words with a 50 word overlap.
+Cosine similarity is used to score the query against every chunk.
+A section scores its best chunk.
+Something that changed from lab 12 is that lab 12 embedded whole articles while this embeds chunks.
+
+For hybrid:
+It fuses bm25 and dense using reciprocal rank fusion with k = 60.
+It fuses the full rankings of all the sections.
+Something that changed from lab 13 was that it also fuses chunk rankings.
+
+For rerank:
+Hybrid's top 20 sections are reordered by Claude Sonnet.
+Sections are cut down to their first 600 characters.
+Some things that changed from lab 13 were: the schema, prompt, calling function, and search_chunks version.
 
 ### Practice queries (20)
 
@@ -132,14 +147,29 @@ Which differences are distinguishable from zero and which are not?
 What is the minimum detectable difference at 20 queries, and what does that say about any gap smaller than it?
 Which claim from lecture 12 or 13 did your numbers support, and which did they leave open?
 
-TODO: write what the practice-query intervals let you claim.
+Rerank on MRR@10 beats the other systems. 
+Score differences (vs MRR@10):
+bm25: +0.293 [+0.043, +0.533]
+dense +0.237 [+0.083, +0.408]
+hybrid +0.329 [+0.164, +0.504]
+Anything not above is not distinguishable from 0 for MRR@10 among bm25, dense and hybrid.
+No pair without rerank in it is distinguishable on any score.
+Rerank doesn't beat bm25 on everything, on recall@10 and nDCG@10, rerank against bm25 is not distinguishable.
+
+The minimum detectable difference at 20 queries differs from pair to pair (0.19 to 0.41 on MRR@10). The minimum detectable difference is the smallest gap that would be caught 80% of the time by 20 queries. Gaps from dense vs bm25 or hybrid vs dense are below their minimum detectable differences, which means that this gold set can't see them, not that they are equal.
+
+One claim it supported from lecture 13 was the LLM reranker improving the candidate list.
+From lecture 12, the numbers are consistent with bm25 and dense missing different kinds of queries.
+From lecture 13, fusion is supposed to help when one partner is weaker and hurt when a retriever is already strong, but the numbers leave this open (hybrid vs bm25 or dense).
 
 ---
 
 ## 2. Stage 1 - cited answers on the 12 shared questions
 
 <!-- p2:begin answers -->
-_No answers files yet: run `uv run p2 answer --corpus shared --system NAME`, then `uv run p2 score`._
+| Label | System | Verified (in) | 95% interval | not_found (in) | Declined (out) | 95% interval | Quotes found |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| rerank | rerank | 8 of 8 (100%) | [0.676, 1.000] | 0 of 8 (0%) | 4 of 4 (100%) | [0.510, 1.000] | 13 of 13 |
 <!-- p2:end answers -->
 
 Which system answered, and why that one?
@@ -294,6 +324,7 @@ Every trace in traces/ that records a Claude call:
 
 | Trace | System | Spans | Claude calls | Saved | Input tokens | Output tokens | Seconds | Input per span | Output per span | Seconds per span |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| traces/answers-rerank.jsonl | rerank | 12 | 24 | 4 | 126,533 | 4,224 | 111.4 | 10,544 | 352 | 9.3 |
 | traces/shared-practice-rerank.jsonl | rerank | 20 | 20 | 3 | 160,002 | 2,040 | 113.3 | 8,000 | 102 | 5.7 |
 | traces/shared-test-rerank.jsonl | rerank | 40 | 40 | 0 | 320,119 | 4,497 | 189.5 | 8,003 | 112 | 4.7 |
 

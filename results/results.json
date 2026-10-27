@@ -1432,7 +1432,46 @@
       ]
     }
   },
-  "answers": {},
+  "answers": {
+    "shared/rerank": {
+      "file": "answers/shared/rerank.json",
+      "corpus": "shared",
+      "system": "rerank",
+      "model": "sonnet",
+      "n_in": 8,
+      "n_out": 4,
+      "verified": 8,
+      "not_found_in": 0,
+      "declined_out": 4,
+      "claims": 13,
+      "claims_verified": 13,
+      "verified_share": 1.0,
+      "verified_wilson95": [
+        0.675592,
+        1.0
+      ],
+      "not_found_in_share": 0.0,
+      "declined_out_share": 1.0,
+      "declined_out_wilson95": [
+        0.510109,
+        1.0
+      ],
+      "passed": {
+        "a01": true,
+        "a02": true,
+        "a03": true,
+        "a04": true,
+        "a05": true,
+        "a06": true,
+        "a07": true,
+        "a08": true,
+        "a09": true,
+        "a10": true,
+        "a11": true,
+        "a12": true
+      }
+    }
+  },
   "stretch": {
     "judge": {
       "files": {},
@@ -1440,6 +1479,16 @@
     },
     "cost": {
       "traces": [
+        {
+          "file": "traces/answers-rerank.jsonl",
+          "system": "rerank",
+          "spans": 12,
+          "calls": 24,
+          "saved": 4,
+          "input_tokens": 126533,
+          "output_tokens": 4224,
+          "seconds": 111.3938
+        },
         {
           "file": "traces/shared-practice-rerank.jsonl",
           "system": "rerank",
