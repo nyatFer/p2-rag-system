@@ -1,1 +1,396 @@
 docid	title	source	license	notes
+yokubi-lesson-00	The anatomy of Japanese sentences	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-00.md
+yokubi-lesson-01	State of being with だ and です	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-01.md
+yokubi-lesson-02	Nouns, pronouns	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-02.md
+yokubi-lesson-03	Particles and grammatical case	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-03.md
+yokubi-lesson-04	Verbs	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-04.md
+yokubi-lesson-05	Possession and attributes with の	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-05.md
+yokubi-lesson-06	Particles に, へ, and から	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-06.md
+yokubi-lesson-07	Negated verbs	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-07.md
+yokubi-lesson-08	い-adjectives	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-08.md
+yokubi-lesson-09	Past verbs	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-09.md
+yokubi-lesson-10	The て form	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-10.md
+yokubi-lesson-11	The て form as auxiliary and giving verbs	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-11.md
+yokubi-lesson-12	Soft requests with てください and the imperative form	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-12.md
+yokubi-lesson-13	The で particle, では and じゃ	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-13.md
+yokubi-lesson-14	Getting detailed with relative clauses	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-14.md
+yokubi-lesson-15	な-adjectives	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-15.md
+yokubi-lesson-16	Irregular and する verbs	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-16.md
+yokubi-lesson-17	Basic politeness and ます form	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-17.md
+yokubi-lesson-18	Existence with いる and ある plus である	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-18.md
+yokubi-lesson-19	Questions with か	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-19.md
+yokubi-lesson-20	Questions with の and explanatory のだ	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-20.md
+yokubi-lesson-21	Getting more with も and と	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-21.md
+yokubi-lesson-22	Enduring actions and state with ている and てある	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-22.md
+yokubi-lesson-23	Demonstratives with こそあど words	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-23.md
+yokubi-lesson-24	Passive form and transitive pairs	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-24.md
+yokubi-lesson-25	Potential form and できる	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-25.md
+yokubi-lesson-26	Expressing volition and desire with たい and ほしい	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-26.md
+yokubi-lesson-27	Saying "if" and "when" with the four conditionals	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-27.md
+yokubi-lesson-28	Verbs review	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-28.md
+yokubi-lesson-29	Sentence ending particles with ね, な, よ, ぞ, ぜ, わ	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-29.md
+yokubi-lesson-30	Quotes with と, って, and という	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-30.md
+yokubi-lesson-31	Adverbs	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-31.md
+yokubi-lesson-32	Asking kindly with なさい and prohibition with な	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-32.md
+yokubi-lesson-33	Question words: なに, だれ, どれ, いつ, etc	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-33.md
+yokubi-lesson-34	か, も, and でも as question word modifiers	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-34.md
+yokubi-lesson-35	Generic nouns and nominalization with 事, 物, ところ, and の	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-35.md
+yokubi-lesson-36	Making lists with や, とか, など, と, か, and に	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-36.md
+yokubi-lesson-37	Adversatives with が, けど, しかし, and ても/でも	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-37.md
+yokubi-lesson-38	Concurrence with ながら, あいだ, うちに, and つつ	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-38.md
+yokubi-lesson-39	Reasoning with から そして ので で	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-39.md
+yokubi-lesson-40	Comparing things with より and の方が	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-40.md
+yokubi-lesson-41	Counting things	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-41.md
+yokubi-lesson-42	Linking conjunctions のに, ように, ために, せいで, and おかげで	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-42.md
+yokubi-lesson-43	Likeness and hearsay with みたい, らしい, ぽい, and そう	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-43.md
+yokubi-lesson-44	Wrongness with だめ, いけない, ならない, and how to say "must"	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-44.md
+yokubi-lesson-45	Listing and repeating actions with 〜たり〜たり and ては	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-45.md
+yokubi-lesson-46	"Just" with だけ, のみ, ばかり, and しか	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-46.md
+yokubi-lesson-47	Still, already, and yet with もう, まだ, and また	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-47.md
+yokubi-lesson-48	Permission with いい and negative invitations with ませんか	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-48.md
+yokubi-lesson-49	The many uses of とする	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-49.md
+yokubi-lesson-50	Trying stuff with てみる	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-50.md
+yokubi-lesson-51	Thinking and feeling with と思う and と考える	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-51.md
+yokubi-lesson-52	More questions with っけ, かな, かい, だい, じゃない, and じゃん	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-52.md
+yokubi-lesson-53	The causative form	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-53.md
+yokubi-lesson-54	Making and becoming with なる and する	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-54.md
+yokubi-lesson-55	Reflexes with 自分	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-55.md
+yokubi-lesson-56	More negatives with なくて, ないで, ず and ずに	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-56.md
+yokubi-lesson-57	Auxiliaries of regret and peace of mind with てしまう and ておく	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-57.md
+yokubi-lesson-58	Directionality with ていく and てくる	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-58.md
+yokubi-lesson-59	The colloquial usages of だって	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-59.md
+yokubi-lesson-60	Expectation with わけ, はず, べき, ものだ, and かもしれない	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-60.md
+yokubi-lesson-61	Approximately with ころ and くらい, and limits with まで, ほど, すぎる	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-61.md
+yokubi-lesson-62	Time references with 後, 前, 先, and 時	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-62.md
+yokubi-lesson-63	A bit more: Some extra particles and auxiliaries	https://github.com/Morgawr/yokubi/tree/b1c0938/src (Morgawr and contributors, CC BY 4.0)	cc-by-4.0	file: yokubi-lesson-63.md
+44195638	ばら (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=44195638	cc-by-sa-4.0	file: 44195638.txt
+46546745	ふぜい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=46546745	cc-by-sa-4.0	file: 46546745.txt
+49734913	さんち (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=49734913	cc-by-sa-4.0	file: 49734913.txt
+58705938	なかった (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=58705938	cc-by-sa-4.0	file: 58705938.txt
+61609528	のみならず (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=61609528	cc-by-sa-4.0	file: 61609528.txt
+63645374	こそすれ (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=63645374	cc-by-sa-4.0	file: 63645374.txt
+65369433	けく (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=65369433	cc-by-sa-4.0	file: 65369433.txt
+70991025	ナイズ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=70991025	cc-by-sa-4.0	file: 70991025.txt
+71563612	だけれども (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=71563612	cc-by-sa-4.0	file: 71563612.txt
+72468820	あります (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=72468820	cc-by-sa-4.0	file: 72468820.txt
+73230270	オア (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=73230270	cc-by-sa-4.0	file: 73230270.txt
+73307852	てある (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=73307852	cc-by-sa-4.0	file: 73307852.txt
+73328563	につき (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=73328563	cc-by-sa-4.0	file: 73328563.txt
+73473071	まり (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=73473071	cc-by-sa-4.0	file: 73473071.txt
+73514445	上に (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=73514445	cc-by-sa-4.0	file: 73514445.txt
+73752509	癖に (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=73752509	cc-by-sa-4.0	file: 73752509.txt
+75196171	など (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=75196171	cc-by-sa-4.0	file: 75196171.txt
+75707376	っこない (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=75707376	cc-by-sa-4.0	file: 75707376.txt
+75755902	せられる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=75755902	cc-by-sa-4.0	file: 75755902.txt
+77902302	んち (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=77902302	cc-by-sa-4.0	file: 77902302.txt
+77924007	がな (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=77924007	cc-by-sa-4.0	file: 77924007.txt
+79292912	ありき (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=79292912	cc-by-sa-4.0	file: 79292912.txt
+79355316	ましょう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=79355316	cc-by-sa-4.0	file: 79355316.txt
+80921641	ざり (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=80921641	cc-by-sa-4.0	file: 80921641.txt
+81561817	だはんで (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=81561817	cc-by-sa-4.0	file: 81561817.txt
+81583263	らむ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=81583263	cc-by-sa-4.0	file: 81583263.txt
+81845157	ので (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=81845157	cc-by-sa-4.0	file: 81845157.txt
+81845166	のに (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=81845166	cc-by-sa-4.0	file: 81845166.txt
+81845273	ばかりか (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=81845273	cc-by-sa-4.0	file: 81845273.txt
+82086912	さん (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=82086912	cc-by-sa-4.0	file: 82086912.txt
+82278800	どころ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=82278800	cc-by-sa-4.0	file: 82278800.txt
+82342526	とは (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=82342526	cc-by-sa-4.0	file: 82342526.txt
+82371621	ごっこ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=82371621	cc-by-sa-4.0	file: 82371621.txt
+82601439	やがる (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=82601439	cc-by-sa-4.0	file: 82601439.txt
+82767462	はる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=82767462	cc-by-sa-4.0	file: 82767462.txt
+82948470	ございます (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=82948470	cc-by-sa-4.0	file: 82948470.txt
+83151286	いは (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=83151286	cc-by-sa-4.0	file: 83151286.txt
+83486557	てしまう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=83486557	cc-by-sa-4.0	file: 83486557.txt
+83710976	ぐ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=83710976	cc-by-sa-4.0	file: 83710976.txt
+83710990	べ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=83710990	cc-by-sa-4.0	file: 83710990.txt
+83714154	ァ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=83714154	cc-by-sa-4.0	file: 83714154.txt
+83748634	なら (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=83748634	cc-by-sa-4.0	file: 83748634.txt
+83854407	やんす (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=83854407	cc-by-sa-4.0	file: 83854407.txt
+84217209	もや (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=84217209	cc-by-sa-4.0	file: 84217209.txt
+84726138	がる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=84726138	cc-by-sa-4.0	file: 84726138.txt
+85190310	てば (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=85190310	cc-by-sa-4.0	file: 85190310.txt
+85265516	だす (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=85265516	cc-by-sa-4.0	file: 85265516.txt
+85389370	ばむ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=85389370	cc-by-sa-4.0	file: 85389370.txt
+85428358	ズ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=85428358	cc-by-sa-4.0	file: 85428358.txt
+85690770	ずみ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=85690770	cc-by-sa-4.0	file: 85690770.txt
+85757885	ものか (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=85757885	cc-by-sa-4.0	file: 85757885.txt
+85800816	ません (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=85800816	cc-by-sa-4.0	file: 85800816.txt
+85814650	れる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=85814650	cc-by-sa-4.0	file: 85814650.txt
+86223204	んちゅ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=86223204	cc-by-sa-4.0	file: 86223204.txt
+86469967	並びに (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=86469967	cc-by-sa-4.0	file: 86469967.txt
+86698947	とした (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=86698947	cc-by-sa-4.0	file: 86698947.txt
+86702813	可い (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=86702813	cc-by-sa-4.0	file: 86702813.txt
+86746562	御座ります (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=86746562	cc-by-sa-4.0	file: 86746562.txt
+86780763	しむ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=86780763	cc-by-sa-4.0	file: 86780763.txt
+86819565	ほど (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=86819565	cc-by-sa-4.0	file: 86819565.txt
+86982141	誰も (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=86982141	cc-by-sa-4.0	file: 86982141.txt
+87210635	じゃっ (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87210635	cc-by-sa-4.0	file: 87210635.txt
+87210640	じゃっど (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87210640	cc-by-sa-4.0	file: 87210640.txt
+87238111	られる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87238111	cc-by-sa-4.0	file: 87238111.txt
+87280657	ぁ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87280657	cc-by-sa-4.0	file: 87280657.txt
+87442764	いし (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87442764	cc-by-sa-4.0	file: 87442764.txt
+87442771	れ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87442771	cc-by-sa-4.0	file: 87442771.txt
+87638537	つもり (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87638537	cc-by-sa-4.0	file: 87638537.txt
+87744317	デレ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87744317	cc-by-sa-4.0	file: 87744317.txt
+87882534	っす (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87882534	cc-by-sa-4.0	file: 87882534.txt
+87957302	ロジー (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=87957302	cc-by-sa-4.0	file: 87957302.txt
+88034754	マン (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88034754	cc-by-sa-4.0	file: 88034754.txt
+88040938	くそ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88040938	cc-by-sa-4.0	file: 88040938.txt
+88060493	ぞ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88060493	cc-by-sa-4.0	file: 88060493.txt
+88106359	つけ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88106359	cc-by-sa-4.0	file: 88106359.txt
+88126268	させる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88126268	cc-by-sa-4.0	file: 88126268.txt
+88208107	ころ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88208107	cc-by-sa-4.0	file: 88208107.txt
+88465693	きり (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88465693	cc-by-sa-4.0	file: 88465693.txt
+88467852	にゃ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88467852	cc-by-sa-4.0	file: 88467852.txt
+88545204	ばってん (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88545204	cc-by-sa-4.0	file: 88545204.txt
+88546167	せる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88546167	cc-by-sa-4.0	file: 88546167.txt
+88547050	へん (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88547050	cc-by-sa-4.0	file: 88547050.txt
+88658798	こそ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88658798	cc-by-sa-4.0	file: 88658798.txt
+88710595	てよ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88710595	cc-by-sa-4.0	file: 88710595.txt
+88738902	やす (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=88738902	cc-by-sa-4.0	file: 88738902.txt
+89051884	たる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89051884	cc-by-sa-4.0	file: 89051884.txt
+89122526	なんぞ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89122526	cc-by-sa-4.0	file: 89122526.txt
+89130522	だらけ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89130522	cc-by-sa-4.0	file: 89130522.txt
+89164063	まろ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89164063	cc-by-sa-4.0	file: 89164063.txt
+89232408	クレメンス (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89232408	cc-by-sa-4.0	file: 89232408.txt
+89529388	若しくは (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89529388	cc-by-sa-4.0	file: 89529388.txt
+89626432	以て (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89626432	cc-by-sa-4.0	file: 89626432.txt
+89715394	おます (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89715394	cc-by-sa-4.0	file: 89715394.txt
+89720625	てく (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89720625	cc-by-sa-4.0	file: 89720625.txt
+89737654	草臥れる (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89737654	cc-by-sa-4.0	file: 89737654.txt
+89779437	しか (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89779437	cc-by-sa-4.0	file: 89779437.txt
+89779707	なきゃ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89779707	cc-by-sa-4.0	file: 89779707.txt
+89779708	なくちゃ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89779708	cc-by-sa-4.0	file: 89779708.txt
+89796382	から (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89796382	cc-by-sa-4.0	file: 89796382.txt
+89859686	ほな (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89859686	cc-by-sa-4.0	file: 89859686.txt
+89980729	ヶ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=89980729	cc-by-sa-4.0	file: 89980729.txt
+90016058	ちゅう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90016058	cc-by-sa-4.0	file: 90016058.txt
+90029456	しい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90029456	cc-by-sa-4.0	file: 90029456.txt
+90055198	よりによって (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90055198	cc-by-sa-4.0	file: 90055198.txt
+90088408	シップ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90088408	cc-by-sa-4.0	file: 90088408.txt
+90110250	かえ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90110250	cc-by-sa-4.0	file: 90110250.txt
+90142774	たろう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90142774	cc-by-sa-4.0	file: 90142774.txt
+90247254	さて (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90247254	cc-by-sa-4.0	file: 90247254.txt
+90319715	らく (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90319715	cc-by-sa-4.0	file: 90319715.txt
+90354958	チック (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90354958	cc-by-sa-4.0	file: 90354958.txt
+90402272	ばっか (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90402272	cc-by-sa-4.0	file: 90402272.txt
+90402291	に於いて (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90402291	cc-by-sa-4.0	file: 90402291.txt
+90427305	ったら (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90427305	cc-by-sa-4.0	file: 90427305.txt
+90666915	っぽい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90666915	cc-by-sa-4.0	file: 90666915.txt
+90757489	く (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90757489	cc-by-sa-4.0	file: 90757489.txt
+90835823	う (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90835823	cc-by-sa-4.0	file: 90835823.txt
+90962954	しめる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90962954	cc-by-sa-4.0	file: 90962954.txt
+90998481	あー (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=90998481	cc-by-sa-4.0	file: 90998481.txt
+91140008	ごわす (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91140008	cc-by-sa-4.0	file: 91140008.txt
+91212342	ては (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91212342	cc-by-sa-4.0	file: 91212342.txt
+91305835	又は (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91305835	cc-by-sa-4.0	file: 91305835.txt
+91313207	下さい (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91313207	cc-by-sa-4.0	file: 91313207.txt
+91348442	につれて (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91348442	cc-by-sa-4.0	file: 91348442.txt
+91370902	とか (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91370902	cc-by-sa-4.0	file: 91370902.txt
+91453214	っぱなし (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91453214	cc-by-sa-4.0	file: 91453214.txt
+91541357	プラス (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91541357	cc-by-sa-4.0	file: 91541357.txt
+91546738	ニダ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91546738	cc-by-sa-4.0	file: 91546738.txt
+91630124	アル (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91630124	cc-by-sa-4.0	file: 91630124.txt
+91671835	ん (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91671835	cc-by-sa-4.0	file: 91671835.txt
+91710339	なふ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91710339	cc-by-sa-4.0	file: 91710339.txt
+91761865	とって (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91761865	cc-by-sa-4.0	file: 91761865.txt
+91848239	まい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=91848239	cc-by-sa-4.0	file: 91848239.txt
+92074182	足す (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92074182	cc-by-sa-4.0	file: 92074182.txt
+92159627	あい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159627	cc-by-sa-4.0	file: 92159627.txt
+92159697	きょう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159697	cc-by-sa-4.0	file: 92159697.txt
+92159702	けむ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159702	cc-by-sa-4.0	file: 92159702.txt
+92159711	こなす (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159711	cc-by-sa-4.0	file: 92159711.txt
+92159714	ござる (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159714	cc-by-sa-4.0	file: 92159714.txt
+92159720	しかし (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159720	cc-by-sa-4.0	file: 92159720.txt
+92159730	そして (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159730	cc-by-sa-4.0	file: 92159730.txt
+92159732	そう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159732	cc-by-sa-4.0	file: 92159732.txt
+92159738	ただ (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159738	cc-by-sa-4.0	file: 92159738.txt
+92159743	だが (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159743	cc-by-sa-4.0	file: 92159743.txt
+92159760	とも (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159760	cc-by-sa-4.0	file: 92159760.txt
+92159762	どん (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159762	cc-by-sa-4.0	file: 92159762.txt
+92159764	どの (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159764	cc-by-sa-4.0	file: 92159764.txt
+92159766	ないで (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159766	cc-by-sa-4.0	file: 92159766.txt
+92159767	ながら (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159767	cc-by-sa-4.0	file: 92159767.txt
+92159770	なさい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159770	cc-by-sa-4.0	file: 92159770.txt
+92159774	なんて (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159774	cc-by-sa-4.0	file: 92159774.txt
+92159775	なんで (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159775	cc-by-sa-4.0	file: 92159775.txt
+92159776	にて (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159776	cc-by-sa-4.0	file: 92159776.txt
+92159784	ばかり (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159784	cc-by-sa-4.0	file: 92159784.txt
+92159799	まく (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159799	cc-by-sa-4.0	file: 92159799.txt
+92159806	まで (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159806	cc-by-sa-4.0	file: 92159806.txt
+92159807	また (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159807	cc-by-sa-4.0	file: 92159807.txt
+92159812	み (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159812	cc-by-sa-4.0	file: 92159812.txt
+92159813	めく (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159813	cc-by-sa-4.0	file: 92159813.txt
+92159815	もう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159815	cc-by-sa-4.0	file: 92159815.txt
+92159829	よう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159829	cc-by-sa-4.0	file: 92159829.txt
+92159831	わい (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92159831	cc-by-sa-4.0	file: 92159831.txt
+92162211	申す (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92162211	cc-by-sa-4.0	file: 92162211.txt
+92162490	罠 (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92162490	cc-by-sa-4.0	file: 92162490.txt
+92162491	置く (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92162491	cc-by-sa-4.0	file: 92162491.txt
+92162773	見る (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92162773	cc-by-sa-4.0	file: 92162773.txt
+92197416	あるいは (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197416	cc-by-sa-4.0	file: 92197416.txt
+92197470	おし (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197470	cc-by-sa-4.0	file: 92197470.txt
+92197514	かな (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197514	cc-by-sa-4.0	file: 92197514.txt
+92197539	くらい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197539	cc-by-sa-4.0	file: 92197539.txt
+92197553	けり (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197553	cc-by-sa-4.0	file: 92197553.txt
+92197563	さえ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197563	cc-by-sa-4.0	file: 92197563.txt
+92197569	さま (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197569	cc-by-sa-4.0	file: 92197569.txt
+92197574	しまう (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197574	cc-by-sa-4.0	file: 92197574.txt
+92197586	すると (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197586	cc-by-sa-4.0	file: 92197586.txt
+92197595	ぜ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197595	cc-by-sa-4.0	file: 92197595.txt
+92197601	たがる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197601	cc-by-sa-4.0	file: 92197601.txt
+92197608	たった (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197608	cc-by-sa-4.0	file: 92197608.txt
+92197614	だけ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197614	cc-by-sa-4.0	file: 92197614.txt
+92197620	ちゃう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197620	cc-by-sa-4.0	file: 92197620.txt
+92197623	って (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197623	cc-by-sa-4.0	file: 92197623.txt
+92197649	とる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197649	cc-by-sa-4.0	file: 92197649.txt
+92197652	どこか (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197652	cc-by-sa-4.0	file: 92197652.txt
+92197656	なう (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197656	cc-by-sa-4.0	file: 92197656.txt
+92197659	なかれ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197659	cc-by-sa-4.0	file: 92197659.txt
+92197661	なく (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197661	cc-by-sa-4.0	file: 92197661.txt
+92197663	なぜなら (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197663	cc-by-sa-4.0	file: 92197663.txt
+92197666	ならば (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197666	cc-by-sa-4.0	file: 92197666.txt
+92197699	べし (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197699	cc-by-sa-4.0	file: 92197699.txt
+92197706	ます (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197706	cc-by-sa-4.0	file: 92197706.txt
+92197709	みたい (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197709	cc-by-sa-4.0	file: 92197709.txt
+92197731	やから (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197731	cc-by-sa-4.0	file: 92197731.txt
+92197746	らしい (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92197746	cc-by-sa-4.0	file: 92197746.txt
+92198736	割る (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92198736	cc-by-sa-4.0	file: 92198736.txt
+92198741	加之 (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92198741	cc-by-sa-4.0	file: 92198741.txt
+92198889	及び (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92198889	cc-by-sa-4.0	file: 92198889.txt
+92199538	行く (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92199538	cc-by-sa-4.0	file: 92199538.txt
+92199719	けん (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92199719	cc-by-sa-4.0	file: 92199719.txt
+92199722	する (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92199722	cc-by-sa-4.0	file: 92199722.txt
+92199737	来る (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92199737	cc-by-sa-4.0	file: 92199737.txt
+92200340	対 (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92200340	cc-by-sa-4.0	file: 92200340.txt
+92203040	ふ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92203040	cc-by-sa-4.0	file: 92203040.txt
+92205335	ぞえ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92205335	cc-by-sa-4.0	file: 92205335.txt
+92208465	ばかし (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92208465	cc-by-sa-4.0	file: 92208465.txt
+92209724	もしかしたら (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92209724	cc-by-sa-4.0	file: 92209724.txt
+92209725	もしかすると (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92209725	cc-by-sa-4.0	file: 92209725.txt
+92210058	をして (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92210058	cc-by-sa-4.0	file: 92210058.txt
+92211544	いで (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92211544	cc-by-sa-4.0	file: 92211544.txt
+92213184	かも知れない (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92213184	cc-by-sa-4.0	file: 92213184.txt
+92213186	加うるに (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92213186	cc-by-sa-4.0	file: 92213186.txt
+92214417	合わせて (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92214417	cc-by-sa-4.0	file: 92214417.txt
+92215249	所で (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92215249	cc-by-sa-4.0	file: 92215249.txt
+92216666	んば (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92216666	cc-by-sa-4.0	file: 92216666.txt
+92216802	まほし (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92216802	cc-by-sa-4.0	file: 92216802.txt
+92217789	っこ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92217789	cc-by-sa-4.0	file: 92217789.txt
+92219108	うじ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92219108	cc-by-sa-4.0	file: 92219108.txt
+92221676	たい (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92221676	cc-by-sa-4.0	file: 92221676.txt
+92224341	イコール (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92224341	cc-by-sa-4.0	file: 92224341.txt
+92225861	あて (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92225861	cc-by-sa-4.0	file: 92225861.txt
+92225892	のみ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92225892	cc-by-sa-4.0	file: 92225892.txt
+92226265	づけ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92226265	cc-by-sa-4.0	file: 92226265.txt
+92226952	あるは (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92226952	cc-by-sa-4.0	file: 92226952.txt
+92228429	やけ (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92228429	cc-by-sa-4.0	file: 92228429.txt
+92228987	のり (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92228987	cc-by-sa-4.0	file: 92228987.txt
+92230973	アナ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92230973	cc-by-sa-4.0	file: 92230973.txt
+92234660	雖も (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92234660	cc-by-sa-4.0	file: 92234660.txt
+92241811	ずに (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92241811	cc-by-sa-4.0	file: 92241811.txt
+92252050	ラー (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92252050	cc-by-sa-4.0	file: 92252050.txt
+92252474	レス (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92252474	cc-by-sa-4.0	file: 92252474.txt
+92252910	おじゃる (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92252910	cc-by-sa-4.0	file: 92252910.txt
+92254190	こける (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92254190	cc-by-sa-4.0	file: 92254190.txt
+92255981	終わる (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92255981	cc-by-sa-4.0	file: 92255981.txt
+92256248	尤も (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92256248	cc-by-sa-4.0	file: 92256248.txt
+92256599	いる (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92256599	cc-by-sa-4.0	file: 92256599.txt
+92256718	くさい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92256718	cc-by-sa-4.0	file: 92256718.txt
+92258304	なば (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92258304	cc-by-sa-4.0	file: 92258304.txt
+92259929	腐る (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92259929	cc-by-sa-4.0	file: 92259929.txt
+92261071	ンゴ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92261071	cc-by-sa-4.0	file: 92261071.txt
+92261584	まがい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92261584	cc-by-sa-4.0	file: 92261584.txt
+92261733	ニキ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92261733	cc-by-sa-4.0	file: 92261733.txt
+92262118	どこ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92262118	cc-by-sa-4.0	file: 92262118.txt
+92264932	歩く (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92264932	cc-by-sa-4.0	file: 92264932.txt
+92266943	その上 (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92266943	cc-by-sa-4.0	file: 92266943.txt
+92267206	たって (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92267206	cc-by-sa-4.0	file: 92267206.txt
+92268134	暮らす (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92268134	cc-by-sa-4.0	file: 92268134.txt
+92271828	然らば (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92271828	cc-by-sa-4.0	file: 92271828.txt
+92272811	かたや (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92272811	cc-by-sa-4.0	file: 92272811.txt
+92273182	っけ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92273182	cc-by-sa-4.0	file: 92273182.txt
+92274319	漁る (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92274319	cc-by-sa-4.0	file: 92274319.txt
+92275229	くない (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92275229	cc-by-sa-4.0	file: 92275229.txt
+92275250	たら (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92275250	cc-by-sa-4.0	file: 92275250.txt
+92275898	かしら (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92275898	cc-by-sa-4.0	file: 92275898.txt
+92280847	それでは (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92280847	cc-by-sa-4.0	file: 92280847.txt
+92285267	めり (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92285267	cc-by-sa-4.0	file: 92285267.txt
+92286625	のめす (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92286625	cc-by-sa-4.0	file: 92286625.txt
+92286780	なのに (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92286780	cc-by-sa-4.0	file: 92286780.txt
+92287974	悩む (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92287974	cc-by-sa-4.0	file: 92287974.txt
+92289664	引く (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92289664	cc-by-sa-4.0	file: 92289664.txt
+92293907	なお (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92293907	cc-by-sa-4.0	file: 92293907.txt
+92294990	過ぎる (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92294990	cc-by-sa-4.0	file: 92294990.txt
+92295866	かて (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92295866	cc-by-sa-4.0	file: 92295866.txt
+92307741	かし (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92307741	cc-by-sa-4.0	file: 92307741.txt
+92310543	へ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92310543	cc-by-sa-4.0	file: 92310543.txt
+92312518	り (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92312518	cc-by-sa-4.0	file: 92312518.txt
+92351889	より (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92351889	cc-by-sa-4.0	file: 92351889.txt
+92398919	ない (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92398919	cc-by-sa-4.0	file: 92398919.txt
+92424120	あげる (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92424120	cc-by-sa-4.0	file: 92424120.txt
+92456008	はい (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92456008	cc-by-sa-4.0	file: 92456008.txt
+92457359	む (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92457359	cc-by-sa-4.0	file: 92457359.txt
+92457513	も (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92457513	cc-by-sa-4.0	file: 92457513.txt
+92479675	では (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92479675	cc-by-sa-4.0	file: 92479675.txt
+92490075	わ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92490075	cc-by-sa-4.0	file: 92490075.txt
+92490273	ゆき (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92490273	cc-by-sa-4.0	file: 92490273.txt
+92490431	じゃ (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92490431	cc-by-sa-4.0	file: 92490431.txt
+92491181	や (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92491181	cc-by-sa-4.0	file: 92491181.txt
+92491237	げ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92491237	cc-by-sa-4.0	file: 92491237.txt
+92491318	江 (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92491318	cc-by-sa-4.0	file: 92491318.txt
+92491339	ちゃん (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92491339	cc-by-sa-4.0	file: 92491339.txt
+92491751	ず (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92491751	cc-by-sa-4.0	file: 92491751.txt
+92493166	ぬ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92493166	cc-by-sa-4.0	file: 92493166.txt
+92496455	だ (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92496455	cc-by-sa-4.0	file: 92496455.txt
+92507290	ケ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92507290	cc-by-sa-4.0	file: 92507290.txt
+92507921	に (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92507921	cc-by-sa-4.0	file: 92507921.txt
+92545739	ってば (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92545739	cc-by-sa-4.0	file: 92545739.txt
+92641455	なんか (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92641455	cc-by-sa-4.0	file: 92641455.txt
+92685822	ば (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92685822	cc-by-sa-4.0	file: 92685822.txt
+92720776	けど (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92720776	cc-by-sa-4.0	file: 92720776.txt
+92722447	け (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92722447	cc-by-sa-4.0	file: 92722447.txt
+92724363	ゆ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92724363	cc-by-sa-4.0	file: 92724363.txt
+92724711	て (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92724711	cc-by-sa-4.0	file: 92724711.txt
+92724736	じ (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92724736	cc-by-sa-4.0	file: 92724736.txt
+92725268	し (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92725268	cc-by-sa-4.0	file: 92725268.txt
+92731492	津 (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92731492	cc-by-sa-4.0	file: 92731492.txt
+92735849	ざる (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92735849	cc-by-sa-4.0	file: 92735849.txt
+92810211	でも (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92810211	cc-by-sa-4.0	file: 92810211.txt
+92810880	ても (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92810880	cc-by-sa-4.0	file: 92810880.txt
+92811136	だって (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92811136	cc-by-sa-4.0	file: 92811136.txt
+92914082	が (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92914082	cc-by-sa-4.0	file: 92914082.txt
+92917064	如 (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92917064	cc-by-sa-4.0	file: 92917064.txt
+92935930	な (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92935930	cc-by-sa-4.0	file: 92935930.txt
+92984155	る (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=92984155	cc-by-sa-4.0	file: 92984155.txt
+93295590	ごと (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93295590	cc-by-sa-4.0	file: 93295590.txt
+93364000	で (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93364000	cc-by-sa-4.0	file: 93364000.txt
+93379827	けれども (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93379827	cc-by-sa-4.0	file: 93379827.txt
+93433004	さ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93433004	cc-by-sa-4.0	file: 93433004.txt
+93447948	尚 (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93447948	cc-by-sa-4.0	file: 93447948.txt
+93450294	私 (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93450294	cc-by-sa-4.0	file: 93450294.txt
+93475012	比 (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93475012	cc-by-sa-4.0	file: 93475012.txt
+93479715	ぽち (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93479715	cc-by-sa-4.0	file: 93479715.txt
+93499970	は (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93499970	cc-by-sa-4.0	file: 93499970.txt
+93511213	だから (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93511213	cc-by-sa-4.0	file: 93511213.txt
+93519204	の (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93519204	cc-by-sa-4.0	file: 93519204.txt
+93528183	ザ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93528183	cc-by-sa-4.0	file: 93528183.txt
+93572680	つ (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93572680	cc-by-sa-4.0	file: 93572680.txt
+93606014	耳 (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93606014	cc-by-sa-4.0	file: 93606014.txt
+93619581	す (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93619581	cc-by-sa-4.0	file: 93619581.txt
+93624311	丈 (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93624311	cc-by-sa-4.0	file: 93624311.txt
+93630789	か (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93630789	cc-by-sa-4.0	file: 93630789.txt
+93632638	ど (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93632638	cc-by-sa-4.0	file: 93632638.txt
+93661811	と (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93661811	cc-by-sa-4.0	file: 93661811.txt
+93736800	た (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93736800	cc-by-sa-4.0	file: 93736800.txt
+93736811	なり (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93736811	cc-by-sa-4.0	file: 93736811.txt
+93736812	を (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93736812	cc-by-sa-4.0	file: 93736812.txt
+93736815	ざます (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93736815	cc-by-sa-4.0	file: 93736815.txt
+93764155	ある (Japanese, auxiliary verb, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93764155	cc-by-sa-4.0	file: 93764155.txt
+93764705	兼 (Japanese, conjunction, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93764705	cc-by-sa-4.0	file: 93764705.txt
+93807544	之 (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93807544	cc-by-sa-4.0	file: 93807544.txt
+93813620	き (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93813620	cc-by-sa-4.0	file: 93813620.txt
+93934857	ね (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93934857	cc-by-sa-4.0	file: 93934857.txt
+93947430	め (Japanese, suffix, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93947430	cc-by-sa-4.0	file: 93947430.txt
+93982583	たり (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=93982583	cc-by-sa-4.0	file: 93982583.txt
+94156403	い (Japanese, particle, Wiktionary)	https://en.wiktionary.org/w/index.php?oldid=94156403	cc-by-sa-4.0	file: 94156403.txt
