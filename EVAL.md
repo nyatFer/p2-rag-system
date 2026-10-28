@@ -55,6 +55,7 @@ Scores per system.
 | rerank | 0.733 | 0.800 | 0.750 |
 | dense_potion | 0.533 | 0.475 | 0.432 |
 | hybrid_dd | 0.625 | 0.518 | 0.491 |
+| rerank_c10 | 0.592 | 0.688 | 0.598 |
 
 20 judged queries; nDCG uses binary labels; a random ranking of the 2,484 documents would get recall@10 near 0.004.
 <!-- p2:end shared-practice -->
@@ -82,6 +83,9 @@ The same scores per query class.
 | hybrid_dd | Recall@10 | 0.357 | 0.643 | 0.917 |
 | hybrid_dd | MRR@10 | 0.476 | 0.398 | 0.708 |
 | hybrid_dd | nDCG@10 | 0.343 | 0.447 | 0.714 |
+| rerank_c10 | Recall@10 | 0.500 | 0.405 | 0.917 |
+| rerank_c10 | MRR@10 | 0.536 | 0.571 | 1.000 |
+| rerank_c10 | nDCG@10 | 0.466 | 0.440 | 0.936 |
 <!-- p2:end shared-practice-classes -->
 
 Differences between every pair of systems, each with its paired interval and the minimum detectable difference.
@@ -134,8 +138,26 @@ Differences between every pair of systems, each with its paired interval and the
 | hybrid_dd minus dense_potion | Recall@10 | +0.092 | [-0.067, +0.275] | 0.245 | not distinguishable |
 | hybrid_dd minus dense_potion | MRR@10 | +0.044 | [-0.062, +0.138] | 0.144 | not distinguishable |
 | hybrid_dd minus dense_potion | nDCG@10 | +0.058 | [-0.057, +0.166] | 0.161 | not distinguishable |
+| rerank_c10 minus bm25 | Recall@10 | -0.033 | [-0.250, +0.192] | 0.324 | not distinguishable |
+| rerank_c10 minus bm25 | MRR@10 | +0.180 | [-0.083, +0.439] | 0.377 | not distinguishable |
+| rerank_c10 minus bm25 | nDCG@10 | +0.080 | [-0.160, +0.314] | 0.344 | not distinguishable |
+| rerank_c10 minus dense | Recall@10 | +0.033 | [-0.125, +0.192] | 0.231 | not distinguishable |
+| rerank_c10 minus dense | MRR@10 | +0.125 | [-0.071, +0.321] | 0.284 | not distinguishable |
+| rerank_c10 minus dense | nDCG@10 | +0.118 | [-0.056, +0.284] | 0.246 | not distinguishable |
+| rerank_c10 minus hybrid | Recall@10 | +0.000 | [+0.000, +0.000] | - | identical on every query |
+| rerank_c10 minus hybrid | MRR@10 | +0.217 | [+0.044, +0.399] | 0.259 | rerank_c10 higher |
+| rerank_c10 minus hybrid | nDCG@10 | +0.155 | [+0.045, +0.272] | 0.164 | rerank_c10 higher |
+| rerank_c10 minus rerank | Recall@10 | -0.142 | [-0.258, -0.050] | 0.160 | rerank higher |
+| rerank_c10 minus rerank | MRR@10 | -0.113 | [-0.250, +0.000] | 0.179 | not distinguishable |
+| rerank_c10 minus rerank | nDCG@10 | -0.152 | [-0.274, -0.050] | 0.164 | rerank higher |
+| rerank_c10 minus dense_potion | Recall@10 | +0.058 | [-0.100, +0.242] | 0.250 | not distinguishable |
+| rerank_c10 minus dense_potion | MRR@10 | +0.213 | [+0.003, +0.431] | 0.312 | rerank_c10 higher |
+| rerank_c10 minus dense_potion | nDCG@10 | +0.166 | [-0.017, +0.360] | 0.274 | not distinguishable |
+| rerank_c10 minus hybrid_dd | Recall@10 | -0.033 | [-0.183, +0.117] | 0.224 | not distinguishable |
+| rerank_c10 minus hybrid_dd | MRR@10 | +0.169 | [+0.003, +0.348] | 0.251 | rerank_c10 higher |
+| rerank_c10 minus hybrid_dd | nDCG@10 | +0.107 | [-0.040, +0.264] | 0.221 | not distinguishable |
 
-The interval is a paired bootstrap (10,000 resamples of the queries); MDD is the smallest difference this many queries detect 80% of the time.
+The interval is a paired bootstrap (10,000 resamples of the queries); MDD is the smallest difference this many queries detect 80% of the time. Two systems that score the same on every query have no interval to speak of, so their MDD is shown as -.
 <!-- p2:end shared-practice-pairs -->
 
 The 40 test queries have no answer key in this repo.
@@ -481,6 +503,7 @@ Every trace in traces/ that records a Claude call:
 | traces/own-own-ablation-rerank40.jsonl | rerank40 | 30 | 30 | 2 | 387,663 | 3,930 | 84.6 | 12,922 | 131 | 2.8 |
 | traces/own-own-rerank.jsonl | rerank | 30 | 30 | 2 | 242,617 | 2,941 | 68.9 | 8,087 | 98 | 2.3 |
 | traces/shared-practice-rerank.jsonl | rerank | 20 | 20 | 3 | 160,002 | 2,040 | 113.3 | 8,000 | 102 | 5.7 |
+| traces/shared-practice-rerank_c10.jsonl | rerank_c10 | 20 | 20 | 2 | 106,177 | 1,807 | 52.4 | 5,309 | 90 | 2.6 |
 | traces/shared-test-rerank.jsonl | rerank | 40 | 40 | 0 | 320,119 | 4,497 | 189.5 | 8,003 | 112 | 4.7 |
 
 A span is one query of a run, one question of an answers file, or one claim of a judged file. A saved reply costs nothing now, so it counts the tokens and the seconds of the call that made it.
@@ -494,6 +517,12 @@ Every pair of systems on the same queries where at least one calls Claude, the o
 | shared practice: hybrid minus rerank | 20 | -0.329 | [-0.504, -0.164] | 8,000 | 5.7 | rerank higher |
 | shared practice: dense_potion minus rerank | 20 | -0.325 | [-0.525, -0.145] | 8,000 | 5.7 | rerank higher |
 | shared practice: hybrid_dd minus rerank | 20 | -0.282 | [-0.445, -0.133] | 8,000 | 5.7 | rerank higher |
+| shared practice: bm25 minus rerank_c10 | 20 | -0.180 | [-0.439, +0.083] | 5,309 | 2.6 | not distinguishable |
+| shared practice: dense minus rerank_c10 | 20 | -0.125 | [-0.321, +0.071] | 5,309 | 2.6 | not distinguishable |
+| shared practice: hybrid minus rerank_c10 | 20 | -0.217 | [-0.399, -0.044] | 5,309 | 2.6 | rerank_c10 higher |
+| shared practice: rerank_c10 minus rerank | 20 | -0.113 | [-0.250, +0.000] | 2,691 | 3.0 | not distinguishable |
+| shared practice: dense_potion minus rerank_c10 | 20 | -0.213 | [-0.431, -0.003] | 5,309 | 2.6 | rerank_c10 higher |
+| shared practice: hybrid_dd minus rerank_c10 | 20 | -0.169 | [-0.348, -0.003] | 5,309 | 2.6 | rerank_c10 higher |
 | own: bm25 minus rerank | 30 | -0.348 | [-0.495, -0.205] | 8,087 | 2.3 | rerank higher |
 | own: dense minus rerank | 30 | -0.261 | [-0.389, -0.142] | 8,087 | 2.3 | rerank higher |
 | own: hybrid minus rerank | 30 | -0.210 | [-0.330, -0.097] | 8,087 | 2.3 | rerank higher |
