@@ -43,7 +43,11 @@ If you rejected the alternative without measuring it, say why that was a fair ca
 "There was no alternative" is not an answer.
 Find the fork.
 
-TODO: your answer to prompt 2.
+I picked for the reranker to see 20 candidates. The alternatives were 10 or 40. I gave up the relevant documents at hybrid ranks 21 to 40 and saved tokens.
+
+Against 20: 
+10 saved 2,691 input tokens per query, with recall@10 -0.142 [-0.258, -0.050] on shared practice. 
+40 gained recall@10 +0.106 [+0.023, +0.201] at about 12,900 against 8,000 tokens on my corpus.
 
 ---
 
@@ -59,7 +63,7 @@ What did you do instead?
 If it genuinely never happened, say so plainly, and then say what you would have had to check in order to notice.
 Being honest here costs you far less than a story you cannot defend when you record your video.
 
-TODO: your answer to prompt 3.
+When I was thinking about what grammar resource to include, I told Claude about Sakubi and Yokubi. Claude wanted to include both but I knew that Yokubi was a modern rewrite of Sakubi. I noticed this because of my pre-existing familiarity with these resources. What I did was tell it that it was a rewrite to see if it still was a good idea to include, which it wasn't.
 
 ---
 
@@ -71,7 +75,7 @@ It could be a mean over a small query class, a difference whose interval include
 What would have to be true for you to trust it?
 Did you do anything to test it, and what did that show?
 
-TODO: your answer to prompt 4.
+A number I don't trust is hybrid beating bm25, +0.138 [+0.020, +0.259], which is below its MDD of 0.175. For me to trust it, I would need more queries. I didn't do anything to test this.
 
 ---
 
@@ -82,4 +86,4 @@ One thing in your system, your corpus or your gold set that is not right, not fi
 What would you do next, and how would you find out whether it matters?
 Name the file, the query or the document where someone could look.
 
-TODO: your answer to prompt 5.
+37 documents are very short (under 50 words) so I would manually read over them to see if they're actually useful and then delete them if they aren't. I would find out whether it matters by querying about topics in the short documents and seeing if other documents are able to answer the question. The documents are in /p2-rag/corpora/own/docs and a list of short files is in /p2-rag/corpora/own/INGEST.md

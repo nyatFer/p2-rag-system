@@ -40,7 +40,7 @@ Something that changed from lab 13 was that it also fuses chunk rankings.
 For rerank:
 Hybrid's top 20 sections are reordered by Claude Sonnet.
 Sections are cut down to their first 600 characters.
-Some things that changed from lab 13 were: the schema, prompt, calling function, and search_chunks version.
+Some things that changed from lab 13 were: the schema, prompt, calling function, and search_chunks version. The schema only allows numbers 1 to 20. The prompt says "a document collection" instead of "a help center". Calls go through p2.claude.call which caches replies and writes traces. And search_chunks version exists so p2 answer can use it.
 
 ### Practice queries (20)
 
@@ -216,7 +216,7 @@ Claim 1 is supported as the quote says "At least once every six months, mine eva
 
 Claim 2 is supported as the quote is also exactly the same as the claim "Be held for each shift at some time other than a shift change and involve all persons underground."
 
-Additions: The answer adds "underground" unlike the claims. It also made "drills" into singular in the answer "Each drill… for each shift" even though the quote say "drills".
+Additions: The answer adds "underground" unlike the claims. It also made "drills" into singular in the answer "Each drill… for each shift" even though the quote says "drills".
 
 a07:
 Claim 1 is supported for the height. The quote says "at least mid-axle height of the largest self-propelled mobile equipment which usually travels the roadway." which matches. For the label "(surface mines, Part 56)" the "Part 56" half is supported by the chunk's title, 56.9300 but the "surface mines" half is not supported because those words don't appear anywhere in the chunk.
@@ -237,6 +237,12 @@ Name the one or two documents you were least sure about and what you decided.
 Say which of the allowed sources in the brief it comes from.
 
 
+The corpus is made up of an online Japanese grammar resource called Yokubi and Japanese entries from the English Wiktionary. Yokubi's lessons came from their GitHub repository and Wiktionary entries came from four categories: particles, auxiliary verbs, suffixes and conjunctions. There are 64 documents from the grammar resource and 331 documents from Wiktionary for a total of 395 documents, 0.7 MB, and 85,049 words. Yokubi is licensed with CC BY 4.0 and Wiktionary with CC BY-SA 4.0.
+
+Some documents I was not sure about were Wiktionary entries with quotations such as in ては or ンゴ. I decided to remove all quotations that weren't example sentences created by Wiktionary. Something else I was unsure about was Yokubi's license as it didn't show up on the website but the GitHub repository for the project has a CC BY 4.0 license so I decided that was enough.
+
+Both sources are allowed as they fall under: CC0, CC BY and CC BY-SA text, including Wikipedia.
+
 ### The gold set
 
 How many queries, how many with origin `hand` and how many with origin `claude`, and which query classes did you use and why?
@@ -245,10 +251,13 @@ How did you find candidates (the systems' top 10, a keyword search, reading), an
 Your labels are binary (`rel` 1) unless you say otherwise: if you use graded labels, declare the scale here, for example 2 means the document answers the query fully and 1 means it helps.
 
 10 hand, 20 claude
-The query classes are: 
-english: A query written completely in English
-romaji: A query written in English but with romanized Japanese embedded
-japanese: A query written in English but with Japanese script embedded
+The three query classes test how retrieval performance changes depending on how Japanese grammar is expressed in a query.
+
+english: A query written entirely in English. This serves as a baseline and tests whether systems can match English descriptions to Japanese grammar points without naming the exact form.
+
+romaji: An English query containing romanized Japanese. This tests whether systems can match romanized grammar forms to documents that primarily use Japanese script.
+
+japanese: An English query containing Japanese script. This tests how systems handle exact Japanese grammar expressions, especially since BM25's tokenizer drops Japanese script.
 
 A document is relevant if it provides the meaning or usage of a grammar concept that directly helps answer the query. For comparison questions, a document explaining either side of the comparison is relevant if it provides useful guidance.
 
@@ -378,7 +387,17 @@ Which differences are distinguishable and which are not, at your gold-set size?
 Do the `hand` queries and the `claude` queries tell the same story?
 Did your prediction in `DECISIONS.md` prompt 1 hold?
 
-TODO: write what your own-corpus intervals let you claim.
+MRR@10:
+Distinguishable: rerank beats bm25 by +0.348 [+0.205, +0.495], dense by +0.261 [+0.142, +0.389], and hybrid by +0.210 [+0.097, +0.330], hybrid beats bm25, +0.138 [+0.020, +0.259] (not reliable with 30 queries)
+
+Indistinguishable: dense against bm25 is +0.087 [-0.067, +0.256] with an MDD of 0.237, and hybrid against dense is +0.051 [-0.075, +0.167] with an MDD of 0.178
+Keep in mind that 30 queries can't reliably see gaps that small.
+
+The Claude queries were easier for rerank and dense. Not distinguishable for bm25 and hybrid. 
+rerank -0.350 [-0.650, -0.100], dense -0.322 [-0.612, -0.013]
+They might be easier for those systems because my hand queries target more grammar points. The story is the same as rerank is best on both types.
+
+I expected bm25 to do worst which was right, but I also expected hybrid to do best, when it was actually rerank, making my prediction partly wrong.
 
 ---
 
@@ -445,10 +464,17 @@ Pick the queries where your best system on your own corpus failed: the relevant 
 Take at least five, and read what the system returned next to what was relevant.
 Then sort the failures by cause, for example a vocabulary mismatch, near-duplicate documents, a chunk that cut the answer in half, a query that is ambiguous, or a label that was wrong, because sometimes the gold set is what failed.
 
-| qid | what the best system returned | what was relevant | cause | what you would try |
+| qid | what the best system returned | what was relevant | cause | what I would try |
 |---|---|---|---|---|
+| h07 | べし, だ, lesson-01 | lesson-60 (hybrid rank 159) | First-stage miss: romaji/script mismatch | Normalize romaji; get lesson-60 into top 10 |
+| c03 | lesson-53, lesson-54, する | lesson-53 and 6 causative entries (hybrid ranks 48–392) | First-stage miss: dictionary entries outside top 40 | Improve dictionary retrieval; raise recall@10 above 1/7 |
+| c04 | lesson-38, 兼, 合わせて | lesson-38, ながら, て (hybrid ranks 108, 114) | First-stage miss: relevant entries outside top 40 | Improve candidate diversity; raise recall@10 above 1/3 |
+| c07 | lesson-45, lesson-36, lesson-63 | lessons 45, 36 and 4 particle entries (hybrid ranks 74–343) | First-stage miss: dictionary entries outside top 40 | Improve particle retrieval; raise recall@10 above 2/6 |
+| h02 | lesson-44, lesson-57, lesson-27 | lessons 40, 60 (hybrid ranks 2–3) | Reranker demotion: relevant documents ranked lower | Tune reranking; move both relevant lessons into top 3 |
 
-TODO: add one row for each failure you analyzed, and write two or three sentences on the pattern you see across them.
+Best system: ablation, rerank with top 40
+
+The main failure was first-stage retrieval because four queries had relevant documents outside hybrid's top 40 which prevented rerank40 from finding them. For h02, the reranker pushed relevant documents down that were already ranked highly by hybrid. Rerank with top 40 retrieved 32/41 relevant textbook lessons but only 28/53 Wiktionary entries which suggests weaker dictionary coverage.
 
 ---
 
@@ -461,7 +487,12 @@ Did the winner change between the shared corpus and yours?
 Why, or why not: what is different about the two collections (document length, vocabulary, identifiers, near-duplicates, how the queries were written), and which of your explanations did you test and which are guesses?
 Say what 20 queries on one side and your gold-set size on the other cannot support.
 
-TODO: write the cross-corpus comparison.
+
+The winner did not change: rerank had the highest MRR@10 on both shared 0.800 and own 0.883 corpora. On my corpus, hybrid beat BM25 +0.138 [+0.020, +0.259] which is distinguishable but below what 30 queries can reliably detect, but did not beat dense +0.051 [-0.075, +0.167].
+
+Measured differences include corpus size (2,484 vs. 395 documents), median length (68 vs. 148 words), and query classes. BM25 achieved 0.810 MRR@10 on shared identifier queries, which my corpus lacks. This supports a possible explanation for BM25's performance, but does not prove causation. The effects of document length and Japanese vocabulary remain untested, testing bm25_cjk could help evaluate the latter.
+
+With only 20 shared and 30 own queries small differences are difficult to detect (MDD: 0.104–0.415 shared, 0.087–0.237 own). Per-class results also lack intervals and different query sets prevent paired cross-corpus comparisons so these results cannot establish which corpus is easier or whether performance differences generalize.
 
 ---
 
@@ -556,7 +587,19 @@ _No stretch runs yet (stretch option 5): `uv run p2 run --corpus own --queries e
 
 ### Your stretch
 
-Write the five things here.
+1. Option: Cost and latency (option 3).
+
+2. Implementation: I created rerank_c10, which reranks hybrid's top 10 candidates instead of 20.
+Files:
+p2/retrievers/rerank_c10.py
+runs/shared/rerank_c10.practice.trec
+traces/shared-practice-rerank_c10.jsonl
+
+3. Results: The stretch-cost table shows that rerank_c10 reduced input tokens from 8,000 to 5,309 per query and latency from 5.7s to 2.6s.
+
+4. Quality trade-off: The shared-practice-pairs table shows MRR@10 decreased by 0.113 which is not distinguishable from zero but does not prove equal quality. Recall@10 decreased by 0.142 and nDCG@10 by 0.152 both distinguishable losses. But rerank_c10 still beat hybrid on MRR@10 by 0.217. I would use it for latency-sensitive applications prioritizing one good answer but not when finding all relevant documents matters.
+
+5. Next step: Test reranking 15 candidates as a compromise. Success would mean at least 20% token savings and an observed recall@10 loss below 0.05 compared with rerank. More queries would be needed to confirm that the true loss is small.
 
 ---
 
