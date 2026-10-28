@@ -2,3 +2,33 @@
 # origin is hand when you wrote the query yourself and claude when a model drafted it; at least 10 must be hand.
 # class is a word you choose, for example identifier, paraphrase or mixed as in the shared sets; scores are reported per class.
 # Lines that start with # are comments, so delete these lines or keep them, as you like.
+h01	english	When should I use the topic marker instead of the subject marker?	hand
+h02	english	How do I express regret about something I should have done?	hand
+h03	english	What's the difference between saying I must do something and saying I should do it?	hand
+h04	english	How do I describe an action that happened accidentally or unintentionally?	hand
+h05	romaji	What's the difference between tara and ba when expressing conditions?	hand
+h06	romaji	When should I use n desu instead of desu?	hand
+h07	romaji	What's the difference between hazu da and beki da?	hand
+h08	japanese	What's the difference between ように and ために when expressing purpose?	hand
+h09	japanese	When should I use たことがある instead of ことがある?	hand
+h10	japanese	How does ている express both ongoing actions and resulting states?	hand
+c01	english	How do I ask someone politely whether I am allowed to do something?	claude
+c02	english	How do I say that something seems true based on what I heard from others?	claude
+c03	english	How do I say that I made someone do something or let them do it?	claude
+c04	english	How do I say that I was doing two things at the same time?	claude
+c05	english	How do I compare two things and say that one is better than the other?	claude
+c06	english	How can I make a request sound softer and less direct?	claude
+c07	english	How do I mention a few example activities without listing everything I did?	claude
+c08	romaji	What does yo add at the end of a sentence compared to ne?	claude
+c09	romaji	How is kedo different from ga when joining two clauses?	claude
+c10	romaji	When should I use kara and when node to give a reason?	claude
+c11	romaji	What does te oku mean when doing something in advance?	claude
+c12	romaji	How do I use shika with a negative verb to mean only?	claude
+c13	romaji	What does sugiru mean when it follows a verb or an adjective?	claude
+c14	romaji	What is the difference between mada and mou?	claude
+c15	japanese	What does ばかり mean after the past form of a verb?	claude
+c16	japanese	How is っけ used when trying to remember something?	claude
+c17	japanese	What nuance does さえ add compared to も?	claude
+c18	japanese	What is the difference between ずに and ないで?	claude
+c19	japanese	What does ものだ express when talking about how things usually are?	claude
+c20	japanese	How do I use かもしれない to say something might happen?	claude
