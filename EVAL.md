@@ -347,6 +347,8 @@ Change one thing and keep everything else the same.
 Write your hypothesis here before you run it, in one sentence with a direction: "I expect X to raise MRR@10 on my corpus because Y."
 The run file for it lives in `runs/own/ablation/`.
 
+I expect a rerank with the top 40 instead of top 20 to raise recall@10 on my corpus because hybrid's top 20 may have missed some relevant documents.
+
 <!-- p2:begin own-ablation -->
 _No ablation runs yet: `uv run p2 run --corpus own --system NAME --ablation` writes one to runs/own/ablation/, then `uv run p2 score` fills this table._
 <!-- p2:end own-ablation -->
@@ -363,6 +365,7 @@ If the result is not distinguishable, say what size of effect your gold set coul
 Read the queries at the top of each list in the second table, and say whether your change explains them.
 
 TODO: write the ablation: the one change, the hypothesis, the result and the claim.
+
 
 ---
 
