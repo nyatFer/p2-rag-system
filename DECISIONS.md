@@ -26,7 +26,9 @@ Commit this answer before your first `uv run p2 score` on the own corpus.
 Git history then shows that the expectation came first, which is what lets it be wrong in a way that teaches you something.
 If you were surprised later, say so in prompt 4 or in EVAL.md; do not come back and rewrite this one.
 
-TODO: your answer to prompt 1.
+I picked a Japanese grammar corpus as I would like to be able to ask Japanese grammar questions in the context of an actual grammar book (with an open license) than just rely on a model's training data or web searches that could be misinformed or incorrect.
+I expect hybrid to win because I think it can precisely match the grammar patterns while also understanding semantic meaning.
+I expect bm25 to do worst because it may miss relevant grammar explanations when a question is phrased differently compared to the grammar resource.
 
 ---
 
